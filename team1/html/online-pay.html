@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>卢天也</title>
+	<link href="../style/periphery2.css" rel="stylesheet">
+	<link href="../style/online-pay.css" rel="stylesheet">
+	<link href="../style/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="../script/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="../script/online-pay.js"></script>
+	
+	
+
+</head>
+<body>
+<!-- 页面头部 -->
+	<div id="top">
+	<div class="top-back">
+		<div class="top-nav">
+			<div class="top-nav-2">
+				<a href="api.html"><img src="../images/imagelu/nav-location.png" alt="location" class="bgc-list-1"></a>
+				<p id="list-2">北京</p>
+				<p id="list-3">切换</p>
+					<div id="gps_change">
+						<ul>
+							<span>热门城市：</span><br>
+							<li><p>北京</p></li>
+							<li><p>西安</p></li>		
+							<li><p>上海</p></li>
+							<li><p>天津</p></li>
+							<li><p>杭州</p></li>
+							<li><p>青海</p></li>
+							<li><p>西藏</p></li>
+							<li><p>云南</p></li>
+							<li><p>新疆</p></li>
+							<li><p>厦门</p></li>		
+							<li><p>河北</p></li>
+							<li><p>广西</p></li>
+							<li><p>广东</p></li>
+							<li><p>香港</p></li>
+							<li><p>澳门</p></li>
+						</ul>
+					</div>
+			</div>
+
+			<!-- 模态框 -->
+			<div class="modal fade" id="myModal">
+		  		<div class="modal-dialog modal-dialog-width">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+		      				<div class="modal-header-in">
+		      					<img src="../images/imagelu/login-logo.gif" alt="">
+		      				</div>
+
+		     			  </div>
+		            <div class="modal-body">
+		            	<div class="modal-body-in">
+		                <a href="#" data-toggle="modal" data-target="#VipLogin" data-dismiss="modal">会员登录</a>
+		            		<input type="text" class="modal-body-input" placeholder="&nbsp;&nbsp;邮箱/手机/用户名">
+		            		<input type="password" class="modal-body-input" placeholder="&nbsp;&nbsp;密码">
+		            		<button type="button" class="btn btn-primary btn-login" data-dismiss="modal">登陆</button>
+		            		<a href="#">忘记密码</a>
+		            		<span class="free-signin">还没有账号？<a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal" type="button">免费注册</a></span>
+		                <div class="clear"></div>
+		            		<div class="modal-footer-in">
+		            			<div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+		            			<br>
+		            			<button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+		            		</div>
+		              </div>
+		          </div>
+		    		</div><!-- /.modal-content -->
+		  		</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="modal fade" id="signIn">
+			  <div class="modal-dialog modal-dialog-width">
+			      <div class="modal-content modal-content-signIn">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-header-in">
+			            <img src="../images/imagelu/login-logo.gif" alt="爱自驾">
+			          </div>
+			        </div>
+			        <div class="modal-body modal-body-signIn">
+			          <a href="#" class="modal-body-signIn-byPhone">用手机注册</a>
+			          <div class="clear"></div>
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;请输入邮箱">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;设置密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入密码">
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入邀请码，可不填">
+			          <div class="modal-body-signIn-agreement">
+			            <span>注册视为同意<a href="#">《爱自驾用户使用协议》</a></span>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">注册</button>
+			          </div>
+			          <div class="modal-footer-in">
+			            <div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+			            <br>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div>
+
+			<div class="modal fade" id="VipLogin">
+			  <div class="modal-dialog modal-dialog-Vip-width">
+			      <div class="modal-content modal-content-Vip">
+			        <div class="modal-left">
+			          <div class="modal-left-header">
+			            <span>会员登陆</span>
+			          </div>
+			          <div class="modal-left-contant">
+			            <div class="modal-left-contant-sign">
+			              <div class="modal-left-contant-sign-name">
+			                <span>会员名：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-password">
+			                <span>登陆密码：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-match">
+			                <span>验证码：</span>
+			              </div>
+			            </div>
+			            <div class="modal-left-contant-input">
+			              <input type="text" class="modal-left-contant-input-name">
+			              <input type="password" class="modal-left-contant-input-password">
+			              <div class="modal-left-contant-input-match">
+			                <span>点击显示</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="modal-left-footer">
+			            <input type="checkbox" class="modal-left-footer-checkbox">
+			            <div class="modal-left-footer-checkbox-ex">
+			              <span>两周内自动登陆</span>
+			              <a href="#">忘记密码？</a>
+			            </div>
+			            <div class="clear"></div>
+			            <div class="modal-left-footer-login">
+			              <a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal">没有用户名？立即注册！</a>
+			              <button type="button" class="btn btn-primary"  data-dismiss="modal">立即登录</button>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="modal-right">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-right-contant">
+			            <span>非会员预定</span>
+			            <button type="button" class="btn btn-primary"  data-dismiss="modal">不登录，直接预定></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<ul class="nav-list-1">
+				<li class="list-4"><a href="http://www.izijia.cn/app_down"><img src="../images/imagelu/nav-phone.png" alt="location" class="bgc-list-4"></a></li>
+				<li class="list-5"><a href="http://www.izijia.cn/app_down/">下载手机<span>APP</span></a></li>
+			</ul>
+			<ul class="nav-list-2">
+				<li class="list-1">
+					<a target="_blank" href="javascript:;" onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=101044974&amp;response_type=token&amp;scope=all&amp;redirect_uri=http%3A%2F%2Fqzonestyle.gtimg.cn%2Fqzone%2Fopenapi%2Fredirect-1.0.1.html', 'oauth2Login_10800' ,'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');">
+						<img class="pic-list-1" src="../images/imagelu/topico3.png">
+					</a>
+				</li>
+				<li class="list-2"><a href="http://service.weibo.com/share/share.php#_loginLayer_1470712013285"><img class="pic-list-2" src="../images/imagelu/nav-sina.png"></a></li>
+				<li class="list-3"><a data-toggle="modal" data-target="#myModal">登录</a></li>
+				<li class="list-4">｜</li>
+				<li class="list-5"><a data-toggle="modal" data-target="#signIn">注册</a></li>
+			</ul>
+	</div>
+	</div>
+
+	
+
+	<!-- 导航栏 -->
+	<div class="top-nav-box">
+		<div class="top-navbar">
+			<div class="logo-img">
+					<img src="../images/imagelu/logo.png">
+				</div>
+				<div class="navbar">
+					<ul class="navbar-list">
+						<li><a href="Non member login.html">首页</a></li>
+						<li><a href="List page.html">目的地</a></li>
+						<li><a href="List of territory.html">线路</a></li>
+						<li><a href="Custom page.html">定制</a></li>
+						<li><a href="Self driving group.html">自驾团</a></li>
+						<li><a href="Other search results.html">摄影</a></li>
+						<li><a href="city Search results.html">互动</a></li>
+						<li><a href="Team leader details.html">精选</a></li>
+						<li><a href="Personal Center.html">预定</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- onlien-pay -->
+	<div class="top1"></div>
+	<div class="clear"></div>
+	<div id="container">
+		<div class="container_inner">
+			<div class="container_inner_menu">
+				<ul>
+					<li><a href="Self driving group.html">自驾团</a> > </li>
+					<li><a href="html/List of territory.html">境内</a> > </li>
+					<li><a href="html/city Search results.html">云南落地自驾行摄之旅</a> > </li>
+					<li><a href="html/Custom page.html">我要报名</a> > </li>
+					<li><p>在线支付</p></li>
+				</ul>
+			</div>
+			<div class="container_inner_floot">
+				<p class="#"><img src="../images/imagelu/online-pay01.jpg" alt=""></p>
+				<p class="#"><img src="../images/imagelu/online-pay01.jpg" alt=""></p>
+				<p class="#">3</p>
+				<p class="#">4</p>
+			</div>
+			<div class="container_inner__list">
+				<ul>
+					<li class="container_inner__list_1">选择路线</li>
+					<li class="container_inner__list_1">填写订单</li>
+					<li class="container_inner__list_1">在线支付</li>
+					<li class="container_inner__list_2">付款成功</li>
+				</ul>
+			</div>
+			<div class="container_inner_content">
+				<img src="../images/imagelu/online-pay-03.jpg" alt="">
+				<span>提交成功，请您于</span><span id="hours"></span><span class="container_inner_content_co">时</span>
+				<span id="minutes"></span><span class="container_inner_content_co">分</span>
+				<span id="seconds"></span>
+				<span class="container_inner_content_co">秒内</span><span>完成支付</span>
+				<span class="container_inner_content_smalltext">(逾期订单将被取消)</span>
+				<div  class="container_inner_content_col">
+					<span>应付金额：￥5280</span>
+				</div>
+				
+				
+			</div>	
+			<div class="container_inner_artical">
+				<div class="container_inner_artical_0">
+					<p>请选择支付方式</p>
+				</div>
+				<div class="container_inner_artical_1">
+					<ul>
+						<li>支付宝支付</li>
+					</ul>
+					<img src="../images/imagelu/online-pay-04.jpg" alt="" class="container_inner_artical_tu1">
+					<p>快捷方便</p>
+					<input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" checked /><label for="radio-2-1"></label>
+					<img src="../images/imagelu/online-pay-07.jpg" alt="" class="container_inner_artical_tu2">	
+				</div>
+				<div class="container_inner_artical_2">
+					<ul>
+						<li>微信支付</li>
+					</ul>
+					<input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label>
+					<img src="../images/imagelu/online-pay-05.jpg" alt="">
+					<p></p>
+				</div>
+				<div class="container_inner_artical_3">
+					<ul>
+						<li>银联支付</li>
+					</ul>
+					<input type="radio" id="radio-2-3" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-3"></label>
+
+					<img src="../images/imagelu/online-pay-06.jpg" alt="">
+					<p></p>
+				</div>
+				<div class="container_inner_artical_feet">
+					<ul>
+						<li>实付金额：</li>
+					</ul>
+					<p>￥5280</p>
+					<input type="button" onclick="location.href='exercise/customized.html'" value="确认并支付">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 页面最底部 -->
+	<div id="footer">
+		<div class="footer-list">
+			<div class="footer-list-inner">
+			<ul>
+				<li class="footer-list-li1"><a href="http://www.ccpress.com.cn/">人民交通出版社</a></li>
+				<li class="footer-list-li2"><a href="exercise/tourism.html">爱自驾</a></li>
+				<li class="footer-list-li3"><a href="#">联系我们</a></li>
+				<li class="footer-list-li4"><a href="https://www.baidu.com/">友情链接</a></li>
+				<li class="footer-list-li5"><a href="https://www.taobao.com/">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<span>人民交通出版社股份有限公司</span>
+			<span>京ICP备15018898号－1</span>
+			<span>开发团队:切图仔</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script src="../script/jquery-1.12.0.min.js"></script>
+	<script src="../script/gps_changes.js"></script>
+	<!-- <script type="text/javascript" src="script/modal.js"></script> -->
+	<script type="text/javascript" src="../script/bootstrap.js"></script>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script type="text/javascript">
+		var targetTime = [23,59,59];
+		var targetHours; 
+		var targetMinutes;
+		var targetseconds;
+
+		var t = setInterval(getTargetTime,1000);
+		function getTargetTime(){
+		var dateNow = new Date();
+		var hours = dateNow.getHours();
+		var minutes = dateNow.getMinutes();
+		var seconds = dateNow.getSeconds();
+		targetHours = targetTime[0] - hours;
+		if(targetTime[1] >= minutes){
+			targetMinutes = targetTime[1] - minutes;
+		}else{
+			targetMinutes = 60 + targetTime[1] - minutes;
+			targetHours -= 1;
+		}
+		if(targetTime[2] >= seconds){
+			targetseconds = targetTime[2] - seconds;
+		}else{
+			targetseconds = 60 + targetTime[2] - seconds;
+			targetMinutes -= 1;
+		}
+		$("#hours").text(targetHours);
+		$("#minutes").text(targetMinutes);
+		$("#seconds").text(targetseconds);
+		if(targetHours==0&&targetMinutes==0&&targetseconds==0){
+			clearInterval(t);
+			}
+		}
+		$("#top_nav_list_tu2").click(function(){
+			$(".box111").stop().slideDown(500)
+		})
+		$("#top_nav_list_tu2").mouseleave(function(){
+			$(".box111").stop().slideUp(500)
+		})
+	</script>
+	<script>
+
+		// 模态框
+		$('#myModal').on('shown.bs.modal',function(){
+				// $('#myInput').focus()
+		});
+    	$('#signIn').on('shown.bs.modal',function(){
+        // $('#myInput').focus()
+    	});
+	</script>
+</body>
+</html>

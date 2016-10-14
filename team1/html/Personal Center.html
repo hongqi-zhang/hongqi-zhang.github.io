@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宫若惜</title>
+	<link rel="stylesheet" href="../style/center.css">
+	<link href="../style/periphery.css" rel="stylesheet">
+	<link rel="stylesheet" href="../style/jedate.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="src/css/star-rating-svg.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="../style/Personal Center modal2.css">
+</head>
+<body>
+	
+	<!-- 点评模态框 -->
+	<div class="modal fade" id="Bomb-box">
+	    <div class="modal-dialog Bomb-box-width">
+	      <div class="modal-content Bomb-box-content">
+	        <div class="Bomb-box-left">
+	          <ul class="Bomb-box-left-word">
+	          	<li class="Bomb-box-left-word-one">行程点评</li>
+	          </ul>
+	          <div class="Bomb-box-left-box">
+	          	<div class="Bomb-box-left-box-one"></div>
+	          	<div class="Bomb-box-left-box-two">
+	          		<ul class="Bomb-box-left-box-two-list">
+	          			<li class="Bomb-box-left-box-two-list-1">晒图片</li>
+	          			<li class="Bomb-box-left-box-two-list-2"><img src="images/1.jpg" alt="#"><span>0/5</span></li>
+	          		</ul>
+	          	</div>
+	          </div>
+	          <input class="Bomb-box-left-btn" type="button" value="提交评论">
+	        </div>
+	        <div class="Bomb-box-right">
+	          <div class="Bomb-box-right-box">
+	          	<ul class="Bomb-box-right-list-one">
+	          		<li><button type="button" class="close" data-dismiss="modal"><img src="images/2.gif" alt=""></button></li>
+	          		<li>关闭</li>
+	          	</ul>
+	          </div>
+	          <ul class="Bomb-box-right-list-two">
+	          	<li>
+	          		<span>行程安排：</span>&nbsp&nbsp&nbsp<input type="radio" name="sex">满意&nbsp&nbsp&nbsp<input type="radio" name="sex">不满意&nbsp&nbsp&nbsp<input type="radio" name="sex">一般
+	          	</li>
+	          	<li>
+	          		<span>住宿餐饮：</span>&nbsp&nbsp&nbsp<input type="radio" name="sex">满意&nbsp&nbsp&nbsp<input type="radio" name="sex">不满意&nbsp&nbsp&nbsp<input type="radio" name="sex">一般
+	          	</li>
+	          	<li>
+	          		<span>旅行交通：</span>&nbsp&nbsp&nbsp<input type="radio" name="sex">满意&nbsp&nbsp&nbsp<input type="radio" name="sex">不满意&nbsp&nbsp&nbsp<input type="radio" name="sex">一般
+	          	</li>
+	          	<li>
+	          		<span>综合评价：</span>&nbsp&nbsp&nbsp<div class="my-rating jq-stars"></div>
+	          	</li>
+	          </ul>
+	        </div>
+	      </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- 订单详情 -->
+	<!-- 详情页模态框 -->
+	<div class="modal fade bs-example-modal-lg" id="myModal" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+		<div id="top"></div>
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content center-block">
+				<div class="modal-header box1">
+					<ul class="Bomb-box-right-list-one">
+	          			<li>
+	          				<button class="btn1" type="button" class="close" data-dismiss="modal">
+	          					<img src="images/2.gif" alt="">
+	          				</button>
+	          			</li>
+	          			<li class="close-name">关闭</li>
+	          		</ul>
+	          		<h2 class="modal-tittle h2">订单详情</h2>
+				</div>
+				<div class="modal-body">
+					<div class="box2">
+						<h4>订单支付总额：</h4><span>￥5280</span>
+					</div>
+					<div class="box3">
+						<h4>线路信息</h4>
+						<div class="clear"></div>
+						<p>自驾团名称：  云南落地自驾行摄之旅<br>
+							出游日期：     2016-01-17 <br>
+							成人：   1人                                   儿童：    0人<br>
+							房间：   2人间，愿意拼房</p>
+					</div>
+					<div class="box4"></div>
+					<div class="box5">
+						<h4>联系人信息</h4>
+						<div class="clear"></div>
+						<p>姓名：罗小小   性别：女  <br>           
+							手机号码：18270837899 <br>
+							邮箱：2689326087@qq.com</p>
+					</div>
+					<div class="box6"></div>
+					<div class="box7">
+						<h4>游客信息</h4>
+						<div class="clear"></div>
+						<p>游客1</p><br>
+						<div class="clear"></div>
+						<p>游客类型: 成人 <br>   
+						姓名：罗小小<br>
+						性别：女     <br>                                     手机号：18270837899 <br>
+						证件：护照 452726199102031552</p>
+					</div>
+					<div class="box8">
+						<p>游客2</p><br>
+						<div class="clear"></div>
+						<p>游客类型: 成人<br>
+						姓名：罗笑笑<br>
+						性别：女<br>
+						手机号：18270837898 <br>
+						证件：护照 452726199302031552</p>
+					</div>
+					<div class="box9"></div>
+					<div class="box10">
+						<h4>保险</h4>
+						<div class="clear"></div>
+						<p>平安爱自驾境外长线保险 经典型2份</p> <p>￥177/一份</p><div class="clear"></div>
+						<p>平安爱自驾境外长线保险 经典型2份</p><p>￥177/一份 </p>
+						
+					</div>
+					<div class="box11"></div>
+					<div class="box12">
+						<h4>预订信息</h4>
+						<div class="clear"></div>
+						<p>发票信息：是否需要发票：是<br>
+						发票抬头：无<br>
+						发票明细：会议费<br>
+						配送地址： 北京市朝阳区北辰东路八号汇园国际k座</p>
+					</div>
+					<div class="box13"></div>
+					<div class="box14">
+						<h4>更多要求</h4>
+						<div class="clear"></div>
+						<p>温馨的住宿和美味的餐食</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#top"><img src="../images/imagelu/Personal Center modal2.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 正文 -->
+	<div class="header">
+		<div id="top">
+		<div class="top-back">
+			<div class="top-nav">
+				<div class="top-nav-2">
+					<a href="api.html"><img src="../images/images-g/nav-location.png" alt="location" class="bgc-list-1"></a>
+					<p id="list-2">北京</p>
+					<p id="list-3">切换</p>
+						<div id="gps_change">
+							<ul>
+								<span>热门城市：</span><br>
+								<li><p>北京</p></li>
+								<li><p>西安</p></li>		
+								<li><p>上海</p></li>
+								<li><p>天津</p></li>
+								<li><p>杭州</p></li>
+								<li><p>青海</p></li>
+								<li><p>西藏</p></li>
+								<li><p>云南</p></li>
+								<li><p>新疆</p></li>
+								<li><p>厦门</p></li>		
+								<li><p>河北</p></li>
+								<li><p>广西</p></li>
+								<li><p>广东</p></li>
+								<li><p>香港</p></li>
+								<li><p>澳门</p></li>
+							</ul>
+						</div>
+				</div>
+				<ul class="nav-list-1">
+					<li class="list-4"><a href="http://www.izijia.cn/app_down"><img src="../images/images-g/nav-phone.png" alt="location" class="bgc-list-4"></a></li>
+					<li class="list-5"><a href="http://www.izijia.cn/app_down/">下载手机<span>APP</span></a></li>
+				</ul>
+				<div class="top_nav_list_2">
+					<img src="../images/images-g/online-pay-09.jpg" alt="" class="top_nav_list_tu1">
+					<div>
+						<span> 浮生若梦_JKAy </span>
+						<img src="../images/images-g/online-pay-08.jpg" alt="" id="top_nav_list_tu2">
+					</div>	
+					<input type="button" onclick="location.href='exercise/customized.html'" value="线路订制">
+			</div>
+		</div>
+		</div>	
+	</div>
+</div>
+	<div class="banner">
+		<div class="up-box">
+			<img src="../images/images-g/1-0.jpg" alt="">
+			<ul class="nav">
+				<li><a href="Non member login.html">首页</a></li>
+				<li><a href="List page.html">目的地</a></li>
+				<li><a href="List of territory.html">线路</a></li>
+				<li><a href="Custom page.html">订制</a></li>
+				<li><a href="Self driving group.html">自驾团</a></li>
+				<li><a href="Other search results.html">摄影</a></li>
+				<li><a href="city Search results.html">互动</a></li>
+				<li><a href="Team leader details.html">精选</a></li>
+				<li><a href="Personal Center.html">预定</a></li>
+			</ul>
+		</div>
+		<div class="down-box">
+			<div class="left-box">
+				<img src="../images/images-g/1-1.jpg" alt="">
+			</div>
+			<div class="center-box">
+				<p>浮生若梦_JKAy</p>
+				<div class="small-box">
+					<img src="../images/images-g/1-2.jpg" alt="">
+					<h3><a href="">修改资料</a></h3>
+				</div>
+				<div class="box-num">
+					<div class="box1">
+						<h5>0</h5>
+						<p>关注</p>
+					</div>
+					<div class="box2">
+						<h5>0</h5>
+						<p>粉丝</p>
+					</div>
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="box-one">
+					<img src="../images/images-g/1-3.jpg" alt="">
+					<p>扫一扫关注我</p>
+				</div>
+				<div class="box-two">
+					<img src="../images/images-g/1-4.jpg" alt="">
+					<p>发布照片</p>
+				</div>
+				<div class="box-three">
+					<img src="../images/images-g/1-5.jpg" alt="">
+					<p>管理互动</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="con-box">
+			<p>我的订单</p>
+			<ul class="option-nav">
+				<li>全部订单</li>
+				<li>待出行</li>
+				<li>待支付</li>
+				<li>待评价</li>
+				<li>已取消</li>
+			</ul>
+		</div>
+		<div class="content-box">
+			<div class="form-box">
+				<form action="">
+					<select name="" id=""><option value="">按条件</option></select>
+					<input type="text" class="put1">
+					<select name="" id="" class="sel"><option value="">状态</option></select>
+					<div class="span-box">					
+						<img src="../images/images-g/1-8.jpg" alt="" onClick=jeDate({dateCell:'#dateput',isTime:true,format:'YYYY-MM-DD'})>
+						<span>至</span>
+						<input type="text" class="put2" id="dateput">
+						<img src="../images/images-g/1-8.jpg" alt="">
+					</div>
+					<input type="text" placeholder="单号" class="put3">
+					<img src="../images/images-g/1-9.jpg" alt="">
+				</form>
+			</div>
+			<div class="color-box">
+				<p>订单信息</p>
+				<ul class="product-list">
+					<li>产品类型</li>
+					<li>出游日期</li>
+					<li>订单金额</li>
+					<li>订单状态</li>
+					<li>操作</li>
+				</ul>
+			</div>	
+			<div class="boxs1">
+				<p>订单编号 : 7195351 预定时间 : 2015-12-29  12 : 04 : 00</p>
+			</div>
+			<div class="boxs2">
+				<img src="../images/images-g/2-0.jpg" alt="">
+				<ul class="list-one">
+					<li>[春节]<魅力湘西过大年></li>
+					<li>湘西年夜饭,北京直飞</li>
+				</ul>
+				<ul class="list-two">
+					<li>自驾游</li>
+					<li>2016-02-07</li>
+					<li>¥4580</li>
+					<li><span>待出行</span></li>
+					<li>
+						<form name="f">
+							<select name="selfs" size="1" onchange="setChange()">
+								<option selected>取消</option>
+								<option value="1">支付</option>
+								<option value="2">点评</option>
+								<option value="3">查看</option>
+							</select>
+						</form>
+
+					</li>
+				</ul>
+			</div>
+			<div class="boxs3">
+				<p>订单编号 ：7195351 预订时间 ：2015-12-25 12 : 04 : 00</p>
+			</div>
+			<div class="boxs4">
+				<img src="../images/images-g/2-1.jpg" alt="">
+				<ul class="one">
+					<li>[5月]<阿尔山童话世界冰</li>
+					<li>雪温泉之旅>北京直飞....</li>
+				</ul>
+				<ul class="two">
+					<li>自驾游</li>
+					<li>2016-05-07</li>
+					<li>¥4580</li>
+					<li><span>待支付</span></li>
+					<li><select name="" id="">
+						<option value="0" selected="" class="bbbb"><a href="" class="aaaa">支付</a></option>
+						<option value="1" >取消</option>						
+						<option value="2">点评</option>
+						</select></li>
+				</ul>
+			</div>
+			<div class="boxs5">
+				<p>订单编号 ：7195351 预订时间 ：2015-12-25 12 : 04 : 00</p>
+			</div>
+			<div class="boxs6">
+				<img src="../images/images-g/2-2.jpg" alt="">
+				<ul class="one">
+					<li>[4月]<海南海岛环驾8日</li>
+					<li>自驾之旅>海口直飞....</li>
+				</ul>
+				<ul class="two">
+					<li>自驾游</li>
+					<li>2016-04-07</li>
+					<li>¥4580</li>
+					<li><span>待评价</span></li>
+					<li>
+						<img src="../images/images-g/3-9.jpg" alt="" data-toggle="modal" data-target="#Bomb-box">
+					</li>
+				</ul>
+			</div>	
+			<div class="boxs7">
+				<p>订单编号 ：7195351 预订时间 ：2015-12-25 12 : 04 : 00</p>
+			</div>
+			<div class="boxs8">
+				<img src="../images/images-g/2-3.jpg" alt="">
+				<ul class="one">
+					<li>[5月]<食在广东粤菜美</li>
+					<li>食6日自驾>北京直飞....</li>
+				</ul>
+				<ul class="two">
+					<li>自驾游</li>
+					<li>2016-05-07</li>
+					<li>¥4580</li>
+					<li><span>已取消</span></li>
+					<li><button data-toggle="modal" data-target="#myModal">查看</button></li>
+				</ul>
+			</div>
+			<h4 class="text"><a href="">加载更多</a></h4>
+		</div>
+		<div class="my-box">
+			<p>我的收藏</p>
+			<ul class="my-list">
+				<li><span>看点</span></li>
+				<li><span>停车发呆地</span></li>
+				<li><span>高德地图点</span></li>
+				<li><span>私享点</span></li>
+				<li><span>线路</span></li>
+				<li><span>自驾团</span></li>
+			</ul>
+		</div>
+		<div class="online-box">
+			<p class="p-one">暂无收藏看点</p>
+			<p class="p-two">我的线路</p>
+		</div>
+		<div class="bus-box">
+			<p class="p-one">暂无线路数据</p>
+			<p class="p-two">我的车队</p>
+		</div>	
+		<div class="pic-box">
+			<div class="boxs">
+				<img src="../images/images-g/2-4.jpg" alt="">
+				<p><a href="">新建车队</a></p>
+			</div>
+			<p class="p-one">我的照片</p>
+			<p class="p-two"><span>照片</span></p>
+		</div>
+		<div class="picture-box">
+			<div class="boxs">
+				<img src="../images/images-g/2-4.jpg" alt="">
+				<p><a href="">上传照片</a></p>
+			</div>
+			<input type="button" value="创建相册">
+			<div class="boxs-pic">
+				<img src="../images/images-g/2-5
+				.jpg" alt="">
+				<p>专属分享</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div id="footer">
+			<div class="footer-list">
+				<div class="footer-list-inner">
+				<ul>
+					<li class="footer-list-li1"><a href="http://www.ccpress.com.cn/">人民交通出版社</a></li>
+					<li class="footer-list-li2"><a href="exercise/tourism.html">爱自驾</a></li>
+					<li class="footer-list-li3"><a href="#">联系我们</a></li>
+					<li class="footer-list-li4"><a href="https://www.baidu.com/">友情链接</a></li>
+					<li class="footer-list-li5"><a href="https://www.taobao.com/">爱自驾品牌店</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="clear"></div>
+			<div class="copyright">
+				<span>人民交通出版社股份有限公司</span>
+				<span>京ICP备15018898号－1</span>
+				<span>开发团队:切图仔</span>
+			</div>
+		</div>
+	</div>
+	<script src="../script/jedate.js"></script>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script src="../script/jquery-1.12.0.min.js"></script>
+	<script src="../script/gps_changes.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.js"><\/script>')</script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="src/jquery.star-rating-svg.js"></script>
+	<script type="text/javascript">
+		$('#myModal').on('shown.bs.modal',function(){
+					// $('#myInput').focus()
+		});
+	    $('#signIn').on('shown.bs.modal',function(){
+	        // $('#myInput').focus()
+	    });
+	    $(".my-rating").starRating({
+        	initialRating: 0,
+       	 	starSize: 16
+    	});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#back-to-top").hide();
+
+			$(function () {
+				$(window).scroll(function(){
+					if ($(window).scrollTop()>100){
+						$("#back-to-top").fadeIn(500);
+					}
+					else{
+						$("#back-to-top").fadeOut(500);
+					}
+				});
+				$("#back-to-top").click(function(){
+					$('body,html').animate({scrollTop:0},100);
+						return false;
+					});
+				});
+		});
+
+	</script>
+	<script>
+		function setChange(){
+			if (document.f.selfs.value == "1"){
+				window.location.href='Fill in order.html';
+				
+
+			}if (document.f.selfs.value == "2"){
+				document.all['selfs'].value;
+			} 
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/bootstrap.min.css" />
+	</head>
+	<body ng-app="app">
+		<div ng-controller="myctrl">
+			<form ng-submit="sub()">
+				<input type="text" ng-model="stu.name"/>
+				<input type="text" ng-model="stu.age"/>
+				<input type="text" ng-model="stu.atc"/>
+				<input type="submit" value="按钮" />	
+			</form>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>成绩</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="student in students">
+					<td>{{student.name}}</td>
+					<td>{{student.age}}</td>
+					<td>{{student.atc}}</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		</div>
+		<script src="script/angular.js"></script>
+		<script>
+			
+			var myapp = angular.module("app",[]);
+			myapp.controller("myctrl",function($scope){
+				function clone(obj){
+					var newobj = {};
+					for(var i in obj){
+						newobj[i]=obj[i];
+					}
+					return newobj;
+				}
+				$scope.sub=function(){
+					this.students.push(clone(this.stu));
+				}
+				$scope.students=[
+					{
+						name:"小明",
+						age:13,
+						atc:90
+					}
+				]
+			})
+		</script>
+	</body>
+</html>

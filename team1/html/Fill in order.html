@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宫若惜</title>
+	<link href="../style/order2.css" rel="stylesheet">
+	<link rel="stylesheet" href="../style/order.css">
+	<link rel="stylesheet" href="../style/bootstrap.css">
+</head>
+<body>
+	<div class="header">
+	<div id="top">
+	<div class="top-back">
+		<div class="top-nav">
+			<div class="top-nav-2">
+				<a href="api.html"><img src="../images/images-g/nav-location.png" alt="location" class="bgc-list-1"></a>
+				<p id="list-2">北京</p>
+				<p id="list-3">切换</p>
+					<div id="gps_change">
+						<ul>
+							<span>热门城市：</span><br>
+							<li><p>北京</p></li>
+							<li><p>西安</p></li>		
+							<li><p>上海</p></li>
+							<li><p>天津</p></li>
+							<li><p>杭州</p></li>
+							<li><p>青海</p></li>
+							<li><p>西藏</p></li>
+							<li><p>云南</p></li>
+							<li><p>新疆</p></li>
+							<li><p>厦门</p></li>		
+							<li><p>河北</p></li>
+							<li><p>广西</p></li>
+							<li><p>广东</p></li>
+							<li><p>香港</p></li>
+							<li><p>澳门</p></li>
+						</ul>
+					</div>
+			</div>
+
+			<!-- 模态框 -->
+			<div class="modal fade" id="myModal">
+		  		<div class="modal-dialog modal-dialog-width">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+		      				<div class="modal-header-in">
+		      					<img src="../images/images-g/login-logo.gif" alt="">
+		      				</div>
+
+		     			  </div>
+		            <div class="modal-body">
+		            	<div class="modal-body-in">
+		                <a href="#" data-toggle="modal" data-target="#VipLogin" data-dismiss="modal">会员登录</a>
+		            		<input type="text" class="modal-body-input" placeholder="&nbsp;&nbsp;邮箱/手机/用户名">
+		            		<input type="password" class="modal-body-input" placeholder="&nbsp;&nbsp;密码">
+		            		<button type="button" class="btn btn-primary btn-login" data-dismiss="modal">登陆</button>
+		            		<a href="#">忘记密码</a>
+		            		<span class="free-signin">还没有账号？<a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal" type="button">免费注册</a></span>
+		                <div class="clear"></div>
+		            		<div class="modal-footer-in">
+		            			<div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+		            			<br>
+		            			<button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+		            		</div>
+		              </div>
+		          </div>
+		    		</div><!-- /.modal-content -->
+		  		</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="modal fade" id="signIn">
+			  <div class="modal-dialog modal-dialog-width">
+			      <div class="modal-content modal-content-signIn">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-header-in">
+			            <img src="../images/images-g/login-logo.gif" alt="爱自驾">
+			          </div>
+			        </div>
+			        <div class="modal-body modal-body-signIn">
+			          <a href="#" class="modal-body-signIn-byPhone">用手机注册</a>
+			          <div class="clear"></div>
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;请输入邮箱">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;设置密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入密码">
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入邀请码，可不填">
+			          <div class="modal-body-signIn-agreement">
+			            <span>注册视为同意<a href="#">《爱自驾用户使用协议》</a></span>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">注册</button>
+			          </div>
+			          <div class="modal-footer-in">
+			            <div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+			            <br>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div>
+
+			<div class="modal fade" id="VipLogin">
+			  <div class="modal-dialog modal-dialog-Vip-width">
+			      <div class="modal-content modal-content-Vip">
+			        <div class="modal-left">
+			          <div class="modal-left-header">
+			            <span>会员登陆</span>
+			          </div>
+			          <div class="modal-left-contant">
+			            <div class="modal-left-contant-sign">
+			              <div class="modal-left-contant-sign-name">
+			                <span>会员名：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-password">
+			                <span>登陆密码：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-match">
+			                <span>验证码：</span>
+			              </div>
+			            </div>
+			            <div class="modal-left-contant-input">
+			              <input type="text" class="modal-left-contant-input-name">
+			              <input type="password" class="modal-left-contant-input-password">
+			              <div class="modal-left-contant-input-match">
+			                <span>点击显示</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="modal-left-footer">
+			            <input type="checkbox" class="modal-left-footer-checkbox">
+			            <div class="modal-left-footer-checkbox-ex">
+			              <span>两周内自动登陆</span>
+			              <a href="#">忘记密码？</a>
+			            </div>
+			            <div class="clear"></div>
+			            <div class="modal-left-footer-login">
+			              <a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal">没有用户名？立即注册！</a>
+			              <button type="button" class="btn btn-primary"  data-dismiss="modal">立即登录</button>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="modal-right">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-right-contant">
+			            <span>非会员预定</span>
+			            <button type="button" class="btn btn-primary"  data-dismiss="modal">不登录，直接预定></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<ul class="nav-list-1">
+				<li class="list-4"><a href="http://www.izijia.cn/app_down"><img src="../images/images-g/nav-phone.png" alt="location" class="bgc-list-4"></a></li>
+				<li class="list-5"><a href="http://www.izijia.cn/app_down/">下载手机<span>APP</span></a></li>
+			</ul>
+			<ul class="nav-list-2">
+				<li class="list-1"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=402310065&site=qq&menu=yes"><img class="pic-list-1" src="../images/images-g/topico3.png"></a></li>
+				<li class="list-2"><a href="#"><img class="pic-list-2" src="../images/images-g/nav-sina.png"></a></li>
+				<li class="list-3"><a data-toggle="modal" data-target="#myModal">登录</a></li>
+				<li class="list-4">｜</li>
+				<li class="list-5"><a data-toggle="modal" data-target="#signIn">注册</a></li>
+			</ul>
+	</div>
+	</div>
+
+	
+
+	<!-- 导航栏 -->
+	<div class="top-nav-box">
+		<div class="top-navbar">
+			<div class="logo-img">
+					<img src="../images/images-g/logo.png">
+				</div>
+				<div class="navbar">
+					<ul class="navbar-list">
+						<li><a href="Non member login.html">首页</a></li>
+						<li><a href="List page.html">目的地</a></li>
+						<li><a href="List of territory.html">线路</a></li>
+						<li><a href="Custom page.html">定制</a></li>
+						<li><a href="Self driving group.html">自驾团</a></li>
+						<li><a href="Other search results.html">摄影</a></li>
+						<li><a href="city Search results.html">互动</a></li>
+						<li><a href="Team leader details.html">精选</a></li>
+						<li><a href="Personal Center.html">预定</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="top-pic"></div>
+	<!-- 头部负值固定用 -->
+	<div class="banner">
+		<div class="small-box">
+			<div class="up-box">
+				<ul class="num-list">
+					<li>自驾团  >  </li>
+					<li>境内  >  </li>
+					<li>云南落地自驾行摄之旅  >  </li>
+					<li>我要报名  >  </li>
+					<li>填写订单</li>
+				</ul>
+			</div>
+			<div class="down-box">
+				<img src="../images/images-g/3-0.jpg" alt="" class="one">
+				<img src="../images/images-g/3-1.jpg" alt="" class="two">
+				<img src="../images/images-g/3-2.jpg" alt="" class="three">
+				<img src="../images/images-g/3-3.jpg" alt="" class="four">
+				<ul class="pic">
+					<li><a href=""><span>选择线路</span></a></li>
+					<li><a href=""><span>填写订单</span></a></li>
+					<li>在线支付</li>
+					<li>付款成功</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="up-box">
+			<div class="left-box">
+				<h2>线路信息</h2>
+				<button><span>修改</span></button>
+			</div>
+			<div class="down-box">
+				<ul class="left-list">
+					<li>线路名称 :</li>
+					<li>出游日期<span>*</span> :</li>
+					<li>成人<span>*</span> :</li>
+					<li>儿童 :</li>
+					<li>房间<span>*</span> :</li>
+					<li>是否同意拼房<span>*</span>:</li>
+				</ul>
+				<ul class="right-list">
+					<li>[北京出发] <span>经奢自驾八人小团：云南落地自驾行摄7日之旅</span></li>
+					<li>2016-01-17</li>
+					<li>1 x ¥5280</li>
+					<li>0 x ¥5280</li>
+					<li class="span">
+						<div class="box1">
+							<span class="container-up">-</span>
+						</div>
+						<div class="box2 val-num">1</div>
+						<div class="box3">
+							<span class="container-add">+</span>
+						</div>
+						<p>(2人间)</p>
+					</li>
+				</ul>
+				<div class="put-box">
+					<div class="boxs1">
+						<input type="radio" name="a" class="put1">同意拼房
+
+					</div>				
+					<div class="boxs2">
+						<input type="radio" name="a" class="put2">不同意拼房,愿意支付房差费用¥3500
+					</div>							
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="list-box1">
+					<p>订单信息</p>
+				</div>
+				<div class="list-box2">
+					<ul>
+						<li>成人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 x ¥5280 </li>
+						<li>房间 x <span class="val-num-two">1</span></li>
+					</ul>
+				</div>
+				<div class="list-box3">
+					<p>意外旅游险&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 x ¥120</p>
+				</div>
+				<div class="list-box4">
+					<p>优惠金额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-¥0</span></p>
+				</div>
+				<div class="list-box5">
+					<p>总计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>¥5400</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="center-box1">
+			<div class="boxs1">
+				<ul class="one choice-one">
+					<li>费用说明</li>
+					<li>退改规则</li>
+				</ul>
+			</div>
+			<div class="box-choice">
+				<ul class="center-list active">
+					<li class="font">费用包含： </li>
+					<li>*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）;</li>
+					<li>*+国内往返美国经济舱机票、燃油附加税、机票税 ;</li>
+					<li>*+包好好莱坞环球影城+17英里海岸门票;</li>
+					<li>*+美国当地钻酒店住宿 ;</li>
+					<li><a href="">阅读全部</a></li>
+				</ul>
+				<ul class="center-list">
+					<li class="font">退改规则包含:</li>
+					<li>*从订票起24小时有效期之内退票按全额80%退</li>
+					<li>*从订票起24小时有效期之内可更换航班</li>
+					<li>*更换一次后不可在次变更li>
+					<li>*请仔细阅读下面规则</li>
+					<li><a href="">规则细则</a></li>
+				</ul>
+			</div>			
+		</div>
+		<div class="center-box2">
+			<div class="boxs2">
+				<p>联系人信息</p>
+			</div>
+			<form action="" class="myForm">
+				<div class="form1">
+					<label for="">姓名<span>*</span></label>
+					<input type="text" placeholder="请输入姓名">				
+				</div>
+				<div class="form2">
+					<label for="">性别</label>
+					<input type="radio" name="a" class="put1">男
+					<input type="radio" name="a" class="put2">女										
+				</div>
+				<div class="form3">
+					<label for="">手机号码<span>*</span></label>
+					<input type="text" placeholder="请输入手机号码" class="fication-num">
+					<p class="info"></p>										
+				</div>
+				<div class="form4">
+					<label for="">邮箱<span>*</span></label>
+					<input type="text" placeholder="请输入邮箱" class="fication-mail">	
+					<p class="info-two"></p>
+				</div>				
+			</form>
+		</div>
+		<div class="center-box3">
+			<div class="boxs3">
+				<p>游客信息</p>
+				<img src="../images/images-g/3-6.jpg" alt="">
+			</div>
+			<div class="p-box">
+				<p>游客1</p>
+			</div>
+			<form action="" class="myForm">
+				<div class="form1">
+					<label for="">游客类型</label>
+					<input type="radio" name="a" class="put1">成人
+					<input type="radio" name="a" class="put2">儿童				
+				</div>
+				<div class="form2">
+					<label for="">姓名<span>*</span></label>
+					<select name="" id=""><option value="">中文</option></select>
+					<input type="text" placeholder="请输入姓名">									
+				</div>
+				<div class="form3">
+					<label for="">性别</label>
+					<input type="radio" name="a" class="put1">男
+					<input type="radio" name="a" class="put2">女										
+				</div>
+				<div class="form4">
+					<label for="">手机号码</label>
+					<input type="text" placeholder="请输入手机号码" class="fication-two-num">
+					<p class="info-three"></p>	
+				</div>
+				<div class="form5">
+					<label for="">证件<span>*</span></label>
+					<select name="" id=""><option value="">护照</option></select>
+					<input type="text" placeholder="证件号码">
+				</div>
+			</form>
+			<div class="app-box">
+				<img src="../images/images-g/3-7.jpg" alt="">
+			</div>
+		</div>
+		<div class="center-box4">
+			<div class="boxs4">
+				<p>保险</p>
+				<p class="p-two">详情></p>
+			</div>
+			<div class="small-box">
+				<input type="checkbox">
+				<ul>
+					<li>平安爱自驾境外长线保险</li>
+					<li>经典型2份</li>
+				</ul>
+				<p><span>¥177/</span>一份</p>
+			</div>
+			<div class="next-box">
+				<input type="checkbox">
+				<ul>
+					<li>平安爱自驾境外长线保险</li>
+					<li>经典型2份</li>
+				</ul>
+				<p><span>¥177/</span>一份</p>
+			</div>
+		</div>
+		<div class="center-box5">
+			<div class="boxs5">
+				<p>预定信息</p>
+			</div>
+			<div class="myForm">
+				<div class="form1">
+					<label for="">发票信息:</label>
+					<label class="bel2" for="">是否需要发票:</label>
+					<input type="radio" name="a" class="put1">是
+					<input type="radio" name="a" class="put2">否
+				</div>
+				<div class="form2">
+					<label for="">发票抬头:</label>
+					<input type="text" placeholder="请输入发票抬头">
+				</div>
+				<div class="form3">
+					<label for="">发票明细:</label>
+					<select name="" id=""><option value="">会议费</option></select>
+				</div>
+				<div class="form4">
+					<label for="">配送地址:</label>
+					<input type="text" placeholder="请输入配送地址">
+				</div>
+			</div>
+			<p class="clone"><a href="">更多要求>></a></p>
+		</div>
+		<div class="center-box6">
+			<div class="blue-box">
+				<h2>总价: 1 x ¥5288 + 1 x ¥120 + 1 x ¥170 = <span>¥5570</span><h2>
+			</div>
+			<input type="checkbox">
+			<p><a href="">已阅读爱自驾条款，并同意</a></p>
+			<a href="online-pay.html"><img src="../images/images-g/3-8.jpg" alt=""></a>
+		</div>
+	</div>
+	<div class="footer">
+		<div id="footer">
+			<div class="footer-list">
+				<div class="footer-list-inner">
+				<ul>
+					<li class="footer-list-li1"><a href="http://www.ccpress.com.cn/">人民交通出版社</a></li>
+					<li class="footer-list-li2"><a href="exercise/tourism.html">爱自驾</a></li>
+					<li class="footer-list-li3"><a href="#">联系我们</a></li>
+					<li class="footer-list-li4"><a href="https://www.baidu.com/">友情链接</a></li>
+					<li class="footer-list-li5"><a href="https://www.taobao.com/">爱自驾品牌店</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="clear"></div>
+			<div class="copyright">
+				<span>人民交通出版社股份有限公司</span>
+				<span>京ICP备15018898号－1</span>
+				<span>开发团队:切图仔</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script src="../script/jquery-1.12.0.min.js"></script>
+	<script src="../script/gps_changes.js"></script>
+	<script type="text/javascript" src="../script/bootstrap.js"></script>
+	<script>
+		// 模态框
+		$('#myModal').on('shown.bs.modal',function(){
+				// $('#myInput').focus()
+		});
+    	$('#signIn').on('shown.bs.modal',function(){
+        // $('#myInput').focus()
+    	});
+    </script>
+    <script src="../script/jquery.js"></script>
+    <script>
+    	//加减房间
+    	$(".container-add").click(function(){
+    		var num = Number($(".val-num").text());
+    		++num;
+    		$(".val-num").text(num);
+    		$(".val-num-two").text(num);
+    	});
+    	$(".container-up").click(function(){
+    		var num = Number($(".val-num").text());
+    		if(num>1){   			
+    		--num;
+    		$(".val-num").text(num);
+    		$(".val-num-two").text(num);
+    		};
+    	});
+
+    	//验证表单
+    	
+    	$(".fication-num").blur(function(){
+    		var re = /^[0-9]{11}$/
+    		var value = $(this).val();
+    		var num = re.test(value);
+    		var span = fun(num);
+    		$(".info").html(span);
+    	});
+    	//邮箱验证
+    	$(".fication-mail").blur(function(){
+    		var re = /^[0-9a-z\_]{6,11}\@qq\.com$/
+    		var value = $(this).val();
+    		var num = re.test(value);
+    		var span = mail(num);
+    		$(".info-two").html(span);
+    	});
+    	function mail(elem){
+    		var right = "<span class='green'>正确</span>";
+    		var wrong = "<span class='red'>请输入6-11位数字加字母加_的组合</span>";
+    		if(elem){
+    			return right;
+    		}else{
+    			return wrong;
+    		}
+    	};
+    	$(".fication-two-num").blur(function(){
+    		var re = /^[0-9]{11}$/
+    		var value = $(this).val();
+    		var num = re.test(value);
+    		var span = fun(num);
+    		$(".info-three").html(span);
+    	});
+    	//验证函数方法
+    	function fun(elem){
+    		var right = "<span class='green'>正确</span>";
+    		var wrong = "<span class='red'>请输入11位数字号码</span>";
+    		if(elem){
+    			return right;
+    		}else{
+    			return wrong;
+    		}
+    	};
+
+    	//选项卡
+    	$(".choice-one li").click(function(){
+    		var index = $(this).index();
+    		$(".box-choice ul").eq(index).addClass("active").siblings().removeClass("active")
+    	});
+    </script>
+</body>
+</html>

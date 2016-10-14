@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" >
+	<title>张红旗</title>
+		<link href="../style/periphery2.css" rel="stylesheet">
+		<link rel="stylesheet" href="../style/bootstrap.css">
+	<link rel="stylesheet" href="../style/Team details.css">
+	<link rel="stylesheet" href="../style/css/fullcalendar.css">
+	<link rel="stylesheet" href="../style/css/fullcalendar.print.css" media='print'>
+	
+	<link rel="stylesheet" href="../style/css/main.css">
+	<!-- 第一天-第七天 -->
+	 <link rel="stylesheet" href="swiper3.css">
+	 <style type="text/css">
+		.big-box{
+			position: relative;	
+			margin: 0 auto;
+			width: 1000px;
+			height: 1650px;
+			overflow: hidden;
+			
+		}
+		.big-box .swiper-container{
+			width: 1000px;
+			height: 825px;
+		}
+		.big-box .swiper-wrapper{
+			width: 1000px;
+			height: 825px;
+		}
+		.big-box .swiper-slide{
+			width: 1000px;
+			height: 825px;
+		}
+		
+
+	 </style>
+
+
+
+
+</head>
+<body>
+	
+
+<!-- 	<div class="header">
+		<div class="h-top">
+			<div class="t-container">
+				<a href=""><img class="img1" src="images/0.jpg" alt=""></a>
+				<ul class="list1">
+					<li> <a href="">北京</a> </li>
+					<li> <a href="">切换</a> </li>
+				</ul>
+				<ul class="list2">
+					<li><img class="img2" src="images/1.jpg" alt=""></li>
+					<li> <a href="">下载手机APP</a></li>
+				</ul>
+				<ul class="list3">
+					<ul class="l-img">
+						<li><a href=""><img src="images/2.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/3.jpg" alt=""></a></li>
+					</ul>
+					<ul class="li">
+						<li > <a href="">登录</a> </li>
+						<li class="li2"> <a href="">注册</a> </li>
+					</ul>
+				</ul>
+				
+				
+				
+			</div>
+		</div>
+		<div class="h-bottom">
+			<div  class="log">
+				<img src="images/4.gif" alt="">
+			</div>
+
+				
+				<ul class="numlist">
+					<li><a href="">首页</a></li>
+					<li><a href="">目的地</a></li>
+					<li><a href="">线路</a></li>
+					<li><a href="">订制</a> </li>
+					<li><a href="">自驾团</a> </li>
+					<li><a href="">摄影</a> </li>
+				
+					<li><a href="">互动</a></li>
+					<li><a href="">精选</a></li>
+					<li><a href="">预订</a></li>
+				</ul>                
+		</div>
+	</div> -->
+		<div id="top">
+	<div class="top-back">
+		<div class="top-nav">
+			<div class="top-nav-2">
+				<a href="api.html"><img src="../images/images-z/nav-location.png" alt="location" class="bgc-list-1"></a>
+				<p id="list-2">北京</p>
+				<p id="list-3">切换</p>
+					<div id="gps_change">
+						<ul>
+							<span>热门城市：</span><br>
+							<li><p>北京</p></li>
+							<li><p>西安</p></li>		
+							<li><p>上海</p></li>
+							<li><p>天津</p></li>
+							<li><p>杭州</p></li>
+							<li><p>青海</p></li>
+							<li><p>西藏</p></li>
+							<li><p>云南</p></li>
+							<li><p>新疆</p></li>
+							<li><p>厦门</p></li>		
+							<li><p>河北</p></li>
+							<li><p>广西</p></li>
+							<li><p>广东</p></li>
+							<li><p>香港</p></li>
+							<li><p>澳门</p></li>
+						</ul>
+					</div>
+			</div>
+
+			<!-- 模态框 -->
+			<div class="modal fade" id="myModal">
+		  		<div class="modal-dialog modal-dialog-width">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+		      				<div class="modal-header-in">
+		      					<img src="../images/images-z/login-logo.gif" alt="">
+		      				</div>
+
+		     			  </div>
+		            <div class="modal-body">
+		            	<div class="modal-body-in">
+		                <a href="#" data-toggle="modal" data-target="#VipLogin" data-dismiss="modal">会员登录</a>
+		            		<input type="text" class="modal-body-input" placeholder="&nbsp;&nbsp;邮箱/手机/用户名">
+		            		<input type="password" class="modal-body-input" placeholder="&nbsp;&nbsp;密码">
+		            		<button type="button" class="btn btn-primary btn-login" data-dismiss="modal">登陆</button>
+		            		<a href="#">忘记密码</a>
+		            		<span class="free-signin">还没有账号？<a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal" type="button">免费注册</a></span>
+		                <div class="clear"></div>
+		            		<div class="modal-footer-in">
+		            			<div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+		            			<br>
+		            			<button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+		            		</div>
+		              </div>
+		          </div>
+		    		</div><!-- /.modal-content -->
+		  		</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="modal fade" id="signIn">
+			  <div class="modal-dialog modal-dialog-width">
+			      <div class="modal-content modal-content-signIn">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-header-in">
+			            <img src="../images/images-z/login-logo.gif" alt="爱自驾">
+			          </div>
+			        </div>
+			        <div class="modal-body modal-body-signIn">
+			          <a href="#" class="modal-body-signIn-byPhone">用手机注册</a>
+			          <div class="clear"></div>
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;请输入邮箱">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;设置密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入密码">
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入邀请码，可不填">
+			          <div class="modal-body-signIn-agreement">
+			            <span>注册视为同意<a href="#">《爱自驾用户使用协议》</a></span>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">注册</button>
+			          </div>
+			          <div class="modal-footer-in">
+			            <div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+			            <br>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div>
+
+			<div class="modal fade" id="VipLogin">
+			  <div class="modal-dialog modal-dialog-Vip-width">
+			      <div class="modal-content modal-content-Vip">
+			        <div class="modal-left">
+			          <div class="modal-left-header">
+			            <span>会员登陆</span>
+			          </div>
+			          <div class="modal-left-contant">
+			            <div class="modal-left-contant-sign">
+			              <div class="modal-left-contant-sign-name">
+			                <span>会员名：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-password">
+			                <span>登陆密码：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-match">
+			                <span>验证码：</span>
+			              </div>
+			            </div>
+			            <div class="modal-left-contant-input">
+			              <input type="text" class="modal-left-contant-input-name">
+			              <input type="password" class="modal-left-contant-input-password">
+			              <div class="modal-left-contant-input-match">
+			                <span>点击显示</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="modal-left-footer">
+			            <input type="checkbox" class="modal-left-footer-checkbox">
+			            <div class="modal-left-footer-checkbox-ex">
+			              <span>两周内自动登陆</span>
+			              <a href="#">忘记密码？</a>
+			            </div>
+			            <div class="clear"></div>
+			            <div class="modal-left-footer-login">
+			              <a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal">没有用户名？立即注册！</a>
+			              <button type="button" class="btn btn-primary"  data-dismiss="modal">立即登录</button>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="modal-right">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-right-contant">
+			            <span>非会员预定</span>
+			            <button type="button" class="btn btn-primary"  data-dismiss="modal">不登录，直接预定></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<ul class="nav-list-1">
+				<li class="list-4"><a href="http://www.izijia.cn/app_down"><img src="../images/images-z/nav-phone.png" alt="location" class="bgc-list-4"></a></li>
+				<li class="list-5"><a href="http://www.izijia.cn/app_down/">下载手机<span>APP</span></a></li>
+			</ul>
+			<ul class="nav-list-2">
+				<li class="list-1"><a target="_blank" href="javascript:;" onclick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=101044974&amp;response_type=token&amp;scope=all&amp;redirect_uri=http%3A%2F%2Fqzonestyle.gtimg.cn%2Fqzone%2Fopenapi%2Fredirect-1.0.1.html', 'oauth2Login_10800' ,'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');"><img class="pic-list-1" src="../images/images-z/topico3.png"></a></li>
+				<li class="list-2"><a href="http://service.weibo.com/share/share.php#_loginLayer_1470712138702"><img class="pic-list-2" src="../images/images-z/nav-sina.png"></a></li>
+				<li class="list-3"><a data-toggle="modal" data-target="#myModal">登录</a></li>
+				<li class="list-4">｜</li>
+				<li class="list-5"><a data-toggle="modal" data-target="#signIn">注册</a></li>
+			</ul>
+	</div>
+	</div>
+
+	
+
+	<!-- 导航栏 -->
+	<div class="top-nav-box">
+		<div class="top-navbar">
+			<div class="logo-img">
+					<img src="../images/images-z/logo.png">
+				</div>
+				<div class="navbar">
+					<ul class="navbar-list">
+						<li><a href="Non member login.html">首页</a></li>
+						<li class="mdd"><a href="List page.html">目的地</a></li>
+						<li><a href="List of territory.html">线路</a></li>
+						<li><a href="custom page.html">定制</a></li>
+						<li><a href="Self driving group.html">自驾团</a></li>
+						<li><a href="Other search results.html">摄影</a></li>
+						<li><a href="City search results.html">互动</a></li>
+						<li><a href="Team leader details.html">精选</a></li>
+						<li><a href="personal Center.html">预定</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top1"></div>
+
+	<ul class="d-list">     
+		<li><a href="#top">首页 ></a>    </li>
+		<li><a href="List page.html">自驾团 ></a>   </li>
+		<li><a href="List of territory.html">自驾团境内</a></li>
+	</ul>
+ <div class="clear"></div>
+	<div class="banner">
+		<ul class="b-list">
+			<li>分享</li>
+			<li> 
+				<img src="../images/images-z/a.jpg" alt=""></li>
+			<li>
+				<img src="../images/images-z/b.jpg" alt="">
+			</li>
+			<li>
+				<img src="../images/images-z/c.jpg" alt="">
+			</li>
+			<li>
+				<img src="../images/images-z/d.jpg" alt="">
+			</li>
+		</ul>
+		<div class="left">
+			<div class="pic">
+				<ul class="picul">
+					<li>
+						<img src="../images/images-z/y-10.jpg" alt="">
+					 </li>
+					<li>
+						<img src="../images/images-z/y-6.jpg" alt="">
+					</li>
+					<li>
+						<img src="../images/images-z/y13.jpg" alt="">
+					</li>
+					<li>
+						<img src="../images/images-z/y14.jpg" alt="">
+					</li>
+					<li>
+						<img src="../images/images-z/y19.jpg" alt="">
+					</li>
+					<li>
+						<img src="../images/images-z/y3-8.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="spic">
+				<input type="button" value="<" class="btn-left">
+				<div class="spl">
+				<ul class="spicul">
+					<li>
+						<img src="../images/images-z/y21.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y22.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y7.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y13.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y19.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y14.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y3-9.jpg" alt="">
+					</li>
+					<li class="spicli">
+						<img src="../images/images-z/y8.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+				<input type="button" value=">" class="btn-right">
+				
+			</div>
+			<div id='calendar'></div>
+		</div>
+		<div class="right">
+			<h3>云南落地自驾行摄之旅</h3>
+			<p>	&nbsp;&nbsp;&nbsp;&nbsp;大地之画东川红土地，光与影精美搭配的元阳梯田，一个摄影穿越的天堂……</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;大地的调色板东川红土地，被称为光与影精美搭配的元阳梯田；这
+			些地方，见过便终生难忘，那瑰丽的色彩，那历经亿万年的修炼，那亘
+			古不变的华丽，灼痛了世人的双眼，最美的季节记录最美的影像，探寻
+			最美的风景……</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;这是一次记录大地色彩之美的摄影旅行。</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;这是享誉摄影世界的世界级摄影旅行目的地，这里没有都市的喧嚣
+			与烦躁，没有钢筋森林给人带来的种种压抑；这里是放飞心灵的地方，
+			也是您涤荡心灵的梦幻旅程。</p>
+			<div class="r-center">
+				<div class="div1">
+					<span class="s1">爱自驾价：</span>
+					<span class="s4">¥</span>
+					<span class="s2">4580</span>
+					<span class="s3">起   </span>
+				</div>
+				<div class="div2"><a href="Custom page.html">我要报名</a></div>
+				<ul class="ul">
+					<li ><img  class="im"src="../images/images-z/5.gif" alt=""></li>
+					<li class="sc">收藏</li>
+				</ul>
+
+			</div>
+			<form class="form"action="">
+				<div>
+					<label for="">出游日期:</label>
+					<input type="text">
+				</div>
+				<div>
+					<label for="">出发城市:</label>
+					<input type="text">
+				</div>
+				
+				<div class="box1"><span>出游人数:</span></div>
+				<div class="box"><span  class="sub1">-</span></div>
+				<div class="box"><span class="num1">1</span></div>
+				<div class="box"><span class="add1">+</span></div>
+				<span class="cr">成人</span>
+				<div class="box"><span  class="sub2">-</span></div>
+				<div class="box"><span class="num2">0</span></div>
+				<div class="box"><span  class="add2">+</span></div>
+				<span class="et">儿童</span>
+				<span class="bz">儿童标准</span>
+				<div class="clear"></div>
+
+				<div class="box2">
+					<span class="xc">行程概要</span>
+					<span>:昆明—</span>
+					<span>建水—</span>
+					<span>元阳—</span>
+					<span>元江—</span>
+					<span>玉溪—</span>
+					<span>东川—</span>
+					<span>昆明</span>
+					<span><a href="#towday">详情>></a></span>
+				</div>
+
+			</form>
+			<div class="box3">
+				<img src="../images/images-z/6.jpg" alt="">
+				<div class="bq">
+					<span>量身定制</span>
+					<span>专属行程 </span>
+					<span>独立包团</span>
+				</div> 
+				
+			</div>
+
+		
+		</div>
+		
+	</div>
+	<div class="container1">
+		
+			<ul class="c-left">
+				<li class="ld">领队介绍</li>
+				<li><img src="../images/images-z/7.jpg" alt=""> </li>
+				<li class="nj">中国自驾游联盟南京 <span>站</span></li>
+				<li class="ls">历史组团</li>
+				
+			</ul>
+		
+		<div class="c-right">
+			<p>
+				自2005年开始，南京首家专业自驾车旅游公司——“中国自驾游联盟”，本着以城市为中心,以旅行社为龙头,以自驾游自
+			</p>
+			<p>
+				助游为纽带的发展宗旨,通过强劲发展,现已覆盖全国20个省200多个城市，总部设在南京，在“专业保障，旅游保险，特色
+			</p>
+			<p>
+				活动，媒体支撑”的指导思想指引下，平均年组织车友实施自驾游旅游活动百余次，参加人员达数万人！近年来，我们策
+			</p>
+			<p>
+				划与服务的自驾游车队达400余个，参加车辆超过2000辆，参加的车友近十万多人次！ 我们的行程遍布华南、华中、华北
+			</p>
+			<p>
+				、西南、西北20余省、区，并多次成功举办主题自驾活动，同时在尝试开辟国外自驾游市场，引导及推动着中国自驾游的
+			</p>
+			<p>
+				方向与潮流，赢得了广大媒体与各路车会的关注与信任，成为本地区自驾游最具活力、最具经验、最具规模、最具口碑的
+				专业机构。
+			</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="container2">
+		<img class="con-left" src="../images/images-z/12.jpg" alt="">
+		<div class="b-ul">
+		<div class="c-ul">
+			<ul>
+				<li> <img src="../images/images-z/8.jpg" alt=""> </li>
+				 <p>海天佛国 普陀山祈福之旅</p>
+					<p class="daty1">2015-01-03</p>
+
+			</ul>
+			<ul>
+				<li> <img src="../images/images-z/9.jpg" alt=""> </li>
+				
+					<p>冰雪呼伦贝尔冬季那达慕自驾</p>
+					
+ 
+					<p class="daty">2015-12-30</p>
+				
+			</ul>
+			
+			<ul>
+				<li> <img src="../images/images-z/10.jpg" alt=""> </li>
+				
+					<p>食在广东 粤菜美食自驾之旅</p>
+
+					<p class="daty1">2015-12-29</p>
+				
+			</ul>
+			<ul>
+				<li> <img src="../images/images-z/11.jpg" alt=""> </li>
+				
+					<p>彩云之南 边关秘境</p>
+
+				
+					<p class="daty1">2016-01-03</p>
+				
+			</ul>
+	<!-- 开始 -->
+			<ul>
+				<li> <img src="../images/images-z/18.jpg" alt=""> </li>
+				 <p>海天佛国 普陀山祈福之旅</p>
+					<p class="daty1">2015-01-03</p>
+
+			</ul>
+			<ul>
+				<li> <img src="../images/images-z/17.jpg" alt=""> </li>
+				
+					<p>冰雪呼伦贝尔冬季那达慕自驾</p>
+					
+ 
+					<p class="daty">2015-12-30</p>
+				
+			</ul>
+			
+			<ul>
+				<li> <img src="../images/images-z/16.jpg" alt=""> </li>
+				
+					<p>食在广东 粤菜美食自驾之旅</p>
+
+					<p class="daty1">2015-12-29</p>
+				
+			</ul>
+			<ul>
+				<li> <img src="../images/images-z/15.jpg" alt=""> </li>
+				
+					<p>彩云之南 边关秘境</p>
+
+				
+					<p class="daty1">2016-01-03</p>
+				
+			</ul>
+			
+		</div>
+	</div>
+		<div>
+		<img class="con-right" src="../images/images-z/13.jpg" alt="">
+	</div>
+</div>
+	<div class="clear"></div>
+	<ul class="container3">
+		<li class="fy"><a href="#towday">行程简介</a> </li>
+		<li><a href="#con4">费用明细</a> </li>
+		<li><a href="#con5">其他说明</a></li>
+		<li><a href="#con6">用户评论</a></li>
+	</ul>
+	<!-- /*//绝对定位*/ -->
+	
+	<!-- /*//绝对定位*/ -->
+	<div class="clear"></div>
+	<!-- 定义big-box -->
+	<div class="big-box">
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>		
+		</div>
+		<div class="towday-right">
+			<h3>第一天</h3>
+			<h5>昆明-建水</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：建水</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- <div class="clear"></div> -->
+<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>		
+		</div>
+		<div class="towday-right">
+			<h3>第二天</h3>
+			<h5>昆明-上海</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：建水</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+		<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+				<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>	
+			
+		</div>
+		<div class="towday-right">
+			<h3>第三天</h3>
+			<h5>昆明-南京</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：南京</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- <div class="clear"></div> -->
+<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>		
+		</div>
+		<div class="towday-right">
+			<h3>第四天</h3>
+			<h5>昆明-广州</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：建水</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+		<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>	
+
+			
+		</div>
+		<div class="towday-right">
+			<h3>第五天</h3>
+			<h5>昆明-福建</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：福建</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- <div class="clear"></div> -->
+<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>		
+		</div>
+		<div class="towday-right">
+			<h3>第六天</h3>
+			<h5>昆明-玉溪</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：建水</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+<div class="swiper-slide">
+	<div id="towday">
+		<div class="pic"><img src="../images/images-z/14.jpg" alt=""></div>
+		<div class="towday-left">
+	<img src="../images/images-z/01.gif" alt="">
+	<div class="days">
+		
+	
+	<h5 class="oneday">第一天</h5>
+	<h5>第二天</h5>
+	<h5>第三天</h5>
+	<h5>第四天</h5>
+	<h5>第五天</h5>
+	<h5>第六天</h5>
+	<h5>第七天</h5>
+	</div>		
+		</div>
+		<div class="towday-right">
+			<h3>第七天</h3>
+			<h5>昆明-云南</h5>
+			<div class="sm">
+				<span>餐食：早餐、晚餐</span>
+				<span>住宿：建水</span>
+			</div>  
+			<div class="cer">
+				<p>
+					酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+					—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+					世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+					誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+					有恍若置身百年前历史生活的感受。
+				</p>
+			</div>
+			<div class="b-pic">
+				<img src="../images/images-z/15.jpg" alt="">
+				<img src="../images/images-z/16.jpg" alt="">
+			</div>
+
+			
+			</div>
+			
+		</div>
+	</div>
+
+	</div>
+	     <div class="swiper-pagination"></div>
+   		</div>
+		
+	</div>
+
+	<!-- big-box -->
+
+	<div class="container4" id="con4">
+		<img src="../images/images-z/19.jpg" alt="">
+		<ul class="onelist">			
+		<li>【活动费用】4580元/人</li>
+			<li>【VIP会员价】4500元/人
+</li>
+			<li>【儿童费用】2500元/人（1.1米-1.4米不占床）</li>
+		</ul>
+		<h5>【费用包含】</h5>
+		<ul class="towlist">
+
+			<li>
+				1、交通：起亚狮跑或现代IX35（4人1车，1000元/人，如不足4人1车，需补车费）
+			</li>
+			<li>
+				2、通讯：通讯设备，车标，<车队出行的后勤服务>组织费用
+			</li>
+			<li>
+				3、用餐：6早6晚，（晚餐60元/人）
+			</li>
+			<li>
+				4、住宿：建水住五星标准；昆明，元阳，玉溪住四星标准；东川红土地住三星标准
+			</li>
+			<li>
+				5、保险：太平洋旅游意外险
+			</li>
+			<li>
+				6、领队：优秀领队及当地导游服务
+			</li>
+			<li>
+				7、景点：建水朱家花园，团山民居，元阳梯田，红河那诺梯田，东川红土地
+			</li>
+		</ul>
+		<h5>【费用不含】</h5>
+		<ul class="towlist">
+
+			<li>
+				1、各地往返昆明机票自理
+			</li>
+			<li>
+				2、全程中餐自理，不占床位早餐请自理
+			</li>
+			<li>
+				3、车辆的油费，路桥费，停车费用
+			</li>
+			<li>
+				4、全程用餐过程中客人所点的酒水费用
+			</li>
+			<li>
+				5、酒店电话费，洗衣费，购物等个人消费
+			</li>
+		</ul>
+	</div>
+	<div class="container5" id="con5">
+		<img src="../images/images-z/20.jpg" alt="">
+		<h5>【活动时间】</h5>
+		<p>2015年12月27日—2016年1月2日</p>
+		<h5>【租车说明】</h5>
+		<ul class="lists">
+			<li>
+				1、本行程车辆是由组织方向当地租车公司代租；租车费用由组织方承担。基本车型：起亚狮跑；车型升级需增加车费。
+			</li>
+			<li>
+				2、租车流程：
+			</li>
+			<li>
+				a. 拿车手续
+				驾车人需带齐本人身份证、驾驶证和信用卡壹张，凭上述证件办理租用手续；信用卡额度不得低于10000元人民币，租车的时候需刷
+				8000元的预授权（神州租车规定）。
+			</li>
+			<li>
+				b. 归还所租车辆，办理还车手续后，即解除8000元预授权。
+			</li>
+			<li>
+				c. 交通违章的处罚，还车时需要刷2000元的违章预授权；作为交通违章押金，在还车之后一个月内无违章的情况下自动解除冻结；如
+				有违章,驾车人自行处理违章并通知租车公司后，则解除2000元的预授权；或者请租车公司代为办理违章，费用从2000元预授权中扣除
+				，剩余的部分则解除预授。
+			</li>
+			<li>
+				d. 行车所产生的油费路桥费包括停车费均由车上客人均摊，另有约定的除外
+			</li>
+		</ul>
+		<h5>【注意事项】</h5>
+		<ul class="lists">
+			<li>
+				1、提前做好汽车检查和保养。提前准备好随车工具、备胎、润滑油等，检查户外装备是否齐全。遇旅途中出现意外事故，承办方有义
+				务和责任为客人协助解决相关问题，但不负事故责任和经济赔偿，如产生赔偿将按保险公司规定赔偿。如遇人力不可抗拒因素所产生的
+				费用由客人自理，如塌方、自然灾害等。
+			</li>
+			<li>
+				2、游客必须身体健康，游程中应遵守纪律，发扬团结互助的精神，必须听从领队劝说不可擅自行动，否则后果自负。
+			</li>
+			<li>
+				3、请自备好照相机、胶卷、防晒霜、爱好摄影、注意照看相关器材。
+			</li>
+			<li>
+				4、自驾车请保持在高速路上的车距，行驶中望车主自觉遵守相关交通规则，不随意超车，严禁在弯道处停车、听从领队安排协调。
+			</li>
+			<li>
+				5、长时间在户外活动，请戴上太阳镜，涂抹防晒霜以护肤；爱护环境，安全第一，全部垃圾带出景区。
+			</li>
+		</ul>
+
+	</div>
+	<div class="picbox">
+		<img src="../images/images-z/21.jpg" alt="">
+	</div>
+	<div class="xbox" id="con6">
+		<div class="div1">
+			<h5>全部点评（15）</h5>
+			
+		</div>
+			<div class="div2">
+				<p>综合评价：</p>
+				<img src="../images/images-z/22.gif" alt="">
+			</div>
+	</div>
+	<div class="clear"></div>
+	<!-- 大盒子 -->
+	<div id="bigbox">
+	<div class="container6 sv-box">
+		<div class="left">
+			<div class="pic"></div>
+		</div>
+		<div class="right">
+			<ul class="x-list">
+				
+				<li>
+					行程安排：满意 &nbsp;&nbsp;&nbsp; |	
+				</li>
+				<li>
+					住宿餐食：满意  &nbsp;&nbsp;&nbsp;|
+				</li>
+				<li>
+					旅行交通：满意 &nbsp;&nbsp;&nbsp;   |
+				</li>
+			
+				
+
+				<li class="x-li">
+					<p>综合评价：</p>
+					<img src="../images/images-z/22.gif" alt="">
+
+				</li>
+
+			</ul>
+			<div class="clear"></div>
+			<p class="p1">
+				18号就结束行程了，现在才来评价，总的来说还是不错的
+			</p>
+			<div class="bpic">
+				<img src="../images/images-z/24.jpg" alt="">
+				<img src="../images/images-z/25.jpg" alt="">
+			</div>
+			<p class="p2">
+				2015-12-22 14:12     来自：爱自驾电脑版
+			</p>
+		</div>
+		
+	</div>
+	<div class="container7 sv-box">
+
+			<div class="left">
+			<div class="pic"></div>
+		</div>
+		<div class="right">
+			<ul class="x-list">
+				
+				<li>
+					行程安排：满意 &nbsp;&nbsp;&nbsp; |	
+				</li>
+				<li>
+					住宿餐食：满意  &nbsp;&nbsp;&nbsp;|
+				</li>
+				<li>
+					旅行交通：满意 &nbsp;&nbsp;&nbsp;   |
+				</li>
+			
+				
+
+				<li class="x-li">
+					<p>综合评价：</p>
+					<img src="../images/images-z/22.gif" alt="">
+
+				</li>
+
+			</ul>
+			<div class="clear"></div>
+			<p class="p1">
+				总体评论给90分！双十一活动的时候定的，价格很便宜，还会担心会不会住宿太偏僻。结果还好，第一天在水原这个地方，房间是
+				公寓。周围很多小商店和酒吧，可以不用非要在第一天行程的汗蒸那里吃饭，这点给大家点建议，后三晚在加阳的怀旧酒店。还可
+				以了，相对于这个价格不用太刻意挑剔。周围吃饭的非常方便。去明洞和北屋打车都要10000-14000的价钱。周围有地铁，我们基
+				本是早晨地铁出，晚上打车回。
+			</p>
+			<p class="p2">
+				行程安排： 行程安排总体满意，第二天的购物关键的重点在于华克山庄，只有60分钟，那里虽然小 折扣真的便宜。娇韵诗免税基
+			</p>
+			<p class="p3">
+				  础又七折。我们基本是靠抢的回来，时间太紧张。乐天和新罗其实在网上买更方便 省的大包小包的拎着。直接去机场
+                    取，还有积分抵现使用。我订了1500人民币的东西，抵掉400多。乐天世界很好玩，可惜时间段。保存体力到最后再
+                    战斗，才是王道。
+			</p>
+			<p class="p4">
+				住宿餐食： 住宿第一天在水原（偏僻些），后三天在加阳怀旧酒店。周围有地铁加阳站，打车到明洞一万多点。还可以。周围吃饭
+			</p>
+			<p class="p5">
+				 的多，很方便。
+			</p>
+			<p class="p6">
+				旅行交通： 交通基本我们是早晨地铁出 晚上打车回。首尔打车还可以把，不太堵。
+			</p>
+			<div class="bpic">
+				<img src="../images/images-z/24.jpg" alt="">
+				<img src="../images/images-z/25.jpg" alt="">
+			</div>
+			<p class="p2">
+				2015-12-22 14:12     来自：爱自驾电脑版
+			</p>
+		</div>
+		
+	</div>
+	<div class="container8 sv-box">
+		<div class="box">
+			<p class="p1">
+				爱自驾客服回复：
+			</p>
+			<p class="p2">
+				尊敬的爱自驾会员，给你立减400这个订单之后，此特惠房型实际您成功预订的此客栈只收了您75元/晚，
+				您可以仔细对比下的，感谢您对爱自驾网的关注与支持，欢迎您下次预订4007-999-999，谢谢！祝您愉快！
+				
+				
+			</p>
+			<p class="p3">(2015-12-11 13:23:56)</p>
+			
+		</div>
+		
+	</div>
+	<div  class="sv-box container9">
+				<div class="left">
+			<div class="pic"></div>
+		</div>
+		<div class="right">
+			<ul class="x-list">
+				
+				<li>
+					行程安排：满意 &nbsp;&nbsp;&nbsp; |	
+				</li>
+				<li>
+					住宿餐食：满意  &nbsp;&nbsp;&nbsp;|
+				</li>
+				<li>
+					旅行交通：满意 &nbsp;&nbsp;&nbsp;   |
+				</li>
+			
+				
+
+				<li class="x-li">
+					<p>综合评价：</p>
+					<img src="../images/images-z/22.gif" alt="">
+
+				</li>
+
+			</ul>
+			<div class="clear"></div>
+			<p class="p1">
+				18号就结束行程了，现在才来评价，总的来说还是不错的
+			</p>
+			<div class="bp">
+				<p>
+					行程安排： 很好
+				</p>
+				<p>
+					住宿餐食： 很好
+				</p>
+				<p>
+					旅行交通： 很好
+				</p>
+			</div>
+
+			
+
+
+			<p class="p2">
+				2015-12-22 14:12     来自：爱自驾电脑版
+			</p>
+		</div>
+		
+	</div>
+</div>
+<!-- 大盒子 -->
+	<div class="container10">
+		<p class="con10-p">
+			査看全部点评>>
+		</p>
+		
+		<div class=obox>
+			
+			<ul>
+				<li>
+					<input class= "btn1"type="button" value="◀">
+				</li>
+				<li class="dli">1</li>
+				<li class="dli">2</li>
+				<li class="dli">3</li>
+				<li class="dli">4</li>
+				<li>
+					<input class= "btn2" type="button" value="下一页▶">
+				</li>
+				<li class="s">
+					<span >到</span>
+				</li>
+				<li>
+					<input class= "in"type="text">
+				</li>
+					
+					
+				<li>
+					<span>页</span>	
+				</li>
+				<li>
+					<input class="btn1 b-qd" type="button" value="确定">
+				</li>
+					
+				
+				
+			</ul>
+			
+		</div>
+	</div>
+		<link href="footer.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+		<div id="footer">
+		<div class="footer-list">
+			<div class="footer-list-inner">
+			<ul>
+				<li class="footer-list-li1"><a href="http://www.ccpress.com.cn/">人民交通出版社</a></li>
+				<li class="footer-list-li2"><a href="exercise/tourism.html">爱自驾</a></li>
+				<li class="footer-list-li3"><a href="#">联系我们</a></li>
+				<li class="footer-list-li4"><a href="https://www.baidu.com/">友情链接</a></li>
+				<li class="footer-list-li5"><a href="https://www.taobao.com/">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<span>人民交通出版社股份有限公司</span>
+			<span>京ICP备15018898号－1</span>
+			<span>开发团队:切图仔</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script src="../script/jquery-1.12.0.min.js"></script>
+	<script src="../script/gps_changes.js"></script>
+	<!-- <script type="text/javascript" src="script/modal.js"></script> -->
+	<script type="text/javascript" src="../script/bootstrap.js"></script>
+	<script type="text/javascript" src="../script/Team details.js"></script>
+	<script src='../script/moment.min.js'></script>
+	
+	<script src='../script/fullcalendar.js'></script>
+	<!-- 第一天-第七天 -->
+	<script src="../script/swiper.js"></script>
+ 
+	<script>
+		// 模态框
+		$('#myModal').on('shown.bs.modal',function(){
+				// $('#myInput').focus()
+		});
+    	$('#signIn').on('shown.bs.modal',function(){
+        // $('#myInput').focus()
+    	});
+    	setInterval(fun,2000);
+    
+     var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'//导航点到侧面
+    });	
+  
+  		
+	</script>	
+	      
+	
+</body>
+</html>

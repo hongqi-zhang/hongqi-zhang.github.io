@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>卢天也</title>
+	<link href="../style/Custom page.css" rel="stylesheet">
+	<link rel="stylesheet" href="../style/bootstrap.css">
+
+</head>
+<body>
+<!-- 页面头部 -->
+	<div id="top">
+	<div class="top-back">
+		<div class="top-nav">
+			<div class="top-nav-2">
+				<a href="api.html"><img src="../images/imagelu/nav-location.png" alt="location" class="bgc-list-1"></a>
+				<p id="list-2">北京</p>
+				<p id="list-3">切换</p>
+					<div id="gps_change">
+						<ul>
+							<span>热门城市：</span><br>
+							<li><p>北京</p></li>
+							<li><p>西安</p></li>		
+							<li><p>上海</p></li>
+							<li><p>天津</p></li>
+							<li><p>杭州</p></li>
+							<li><p>青海</p></li>
+							<li><p>西藏</p></li>
+							<li><p>云南</p></li>
+							<li><p>新疆</p></li>
+							<li><p>厦门</p></li>		
+							<li><p>河北</p></li>
+							<li><p>广西</p></li>
+							<li><p>广东</p></li>
+							<li><p>香港</p></li>
+							<li><p>澳门</p></li>
+						</ul>
+					</div>
+			</div>
+
+			<!-- 模态框 -->
+			<div class="modal fade" id="myModal">
+		  		<div class="modal-dialog modal-dialog-width">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+		      				<div class="modal-header-in">
+		      					<img src="../images/imagelu/login-logo.gif" alt="">
+		      				</div>
+
+		     			  </div>
+		            <div class="modal-body">
+		            	<div class="modal-body-in">
+		                <a href="#" data-toggle="modal" data-target="#VipLogin" data-dismiss="modal">会员登录</a>
+		            		<input type="text" class="modal-body-input" placeholder="&nbsp;&nbsp;邮箱/手机/用户名">
+		            		<input type="password" class="modal-body-input" placeholder="&nbsp;&nbsp;密码">
+		            		<button type="button" class="btn btn-primary btn-login" data-dismiss="modal">登陆</button>
+		            		<a href="#">忘记密码</a>
+		            		<span class="free-signin">还没有账号？<a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal" type="button">免费注册</a></span>
+		                <div class="clear"></div>
+		            		<div class="modal-footer-in">
+		            			<div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+		            			<br>
+		            			<button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+		            		</div>
+		              </div>
+		          </div>
+		    		</div><!-- /.modal-content -->
+		  		</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="modal fade" id="signIn">
+			  <div class="modal-dialog modal-dialog-width">
+			      <div class="modal-content modal-content-signIn">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-header-in">
+			            <img src="../images/imagelu/login-logo.gif" alt="爱自驾">
+			          </div>
+			        </div>
+			        <div class="modal-body modal-body-signIn">
+			          <a href="#" class="modal-body-signIn-byPhone">用手机注册</a>
+			          <div class="clear"></div>
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;请输入邮箱">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;设置密码">
+			          <input type="password" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入密码">
+			          <input type="text" class="modal-body-signIn-input" placeholder="&nbsp;&nbsp;输入邀请码，可不填">
+			          <div class="modal-body-signIn-agreement">
+			            <span>注册视为同意<a href="#">《爱自驾用户使用协议》</a></span>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">注册</button>
+			          </div>
+			          <div class="modal-footer-in">
+			            <div class="modal-footer-in-span"><span class="otherway-login">其他报名方式</span></div>
+			            <br>
+			            <button type="button" class="btn btn-primary not-login"  data-dismiss="modal">不登录，直接报名></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div>
+
+			<div class="modal fade" id="VipLogin">
+			  <div class="modal-dialog modal-dialog-Vip-width">
+			      <div class="modal-content modal-content-Vip">
+			        <div class="modal-left">
+			          <div class="modal-left-header">
+			            <span>会员登陆</span>
+			          </div>
+			          <div class="modal-left-contant">
+			            <div class="modal-left-contant-sign">
+			              <div class="modal-left-contant-sign-name">
+			                <span>会员名：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-password">
+			                <span>登陆密码：</span>
+			              </div>
+			              <div class="modal-left-contant-sign-match">
+			                <span>验证码：</span>
+			              </div>
+			            </div>
+			            <div class="modal-left-contant-input">
+			              <input type="text" class="modal-left-contant-input-name">
+			              <input type="password" class="modal-left-contant-input-password">
+			              <div class="modal-left-contant-input-match">
+			                <span>点击显示</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="modal-left-footer">
+			            <input type="checkbox" class="modal-left-footer-checkbox">
+			            <div class="modal-left-footer-checkbox-ex">
+			              <span>两周内自动登陆</span>
+			              <a href="#">忘记密码？</a>
+			            </div>
+			            <div class="clear"></div>
+			            <div class="modal-left-footer-login">
+			              <a href="#" data-toggle="modal" data-target="#signIn" data-dismiss="modal">没有用户名？立即注册！</a>
+			              <button type="button" class="btn btn-primary"  data-dismiss="modal">立即登录</button>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="modal-right">
+			          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			          <div class="modal-right-contant">
+			            <span>非会员预定</span>
+			            <button type="button" class="btn btn-primary"  data-dismiss="modal">不登录，直接预定></button>
+			          </div>
+			        </div>
+			      </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<ul class="nav-list-1">
+				<li class="list-4"><a href="http://www.izijia.cn/app_down"><img src="../images/imagelu/nav-phone.png" alt="location" class="bgc-list-4"></a></li>
+				<li class="list-5"><a href="http://www.izijia.cn/app_down/">下载手机<span>APP</span></a></li>
+			</ul>
+			<ul class="nav-list-2">
+				<li class="list-1"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=402310065&site=qq&menu=yes"><img class="pic-list-1" src="../images/imagelu/topico3.png"></a></li>
+				<li class="list-2"><a href="http://service.weibo.com/share/share.php#_loginLayer_1470712138702"><img class="pic-list-2" src="../images/imagelu/nav-sina.png"></a></li>
+				<li class="list-3"><a data-toggle="modal" data-target="#myModal">登录</a></li>
+				<li class="list-4">｜</li>
+				<li class="list-5"><a data-toggle="modal" data-target="#signIn">注册</a></li>
+			</ul>
+	</div>
+	</div>
+	<!-- 导航栏 -->
+	<div class="top-nav-box">
+		<div class="top-navbar">
+			<div class="logo-img">
+					<img src="../images/imagelu/logo.png">
+				</div>
+				<div class="navbar">
+					<ul class="navbar-list">
+						<li><a href="Non member login.html">首页</a></li>
+						<li><a href="List page.html">目的地</a></li>
+						<li><a href="List of territory.html">线路</a></li>
+						<li><a href="Custom page.html">定制</a></li>
+						<li><a href="Self driving group.html">自驾团</a></li>
+						<li><a href="Other search results.html">摄影</a></li>
+						<li><a href="city Search results.html">互动</a></li>
+						<li><a href="Team leader details.html">精选</a></li>
+						<li><a href="Personal Center.html">预定</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 正文 -->
+	<div id="main">
+		<div class="main-img">
+			<img src="../images/Custom page/Custom page-01.jpg" alt="">
+		</div>
+		<div class="main-inner">
+		<form action="">
+			<div class="main-top">
+					<div class="main-top-h"><img src="../images/Custom page/Custom page-02.jpg" alt=""><p>联系人信息</p><span>（必填）</span></div>
+					<div class="main-top-l">
+						<div class="main-top-n">
+							<span>姓名</span>
+							<span>手机号码</span>
+							<span>邮箱</span>
+						</div>
+						<div class="main-top-m">
+							<input type="text" placeholder="请输入姓名" required="true">
+							<input class="telephone6-11" type="text" placeholder="请输入手机号码" required="true"><span class="telephone11"></span>
+							<input class="telephone-e" type="e-mail" placeholder="请输入邮箱" required="true"><span class="telephone-email"></span>
+						</div>
+					</div>
+			</div>
+			<div class="main-middle">
+				<div class="main-middle-h">
+					<img src="../images/Custom page/Custom page-03.jpg" alt="">
+					<p>基本信息</p>
+					<span>（必填）</span>
+				</div>
+				<div class="main-middle-l">
+					<div class="main-middle-n">
+						<span>出游性质</span>
+						<span>出发地</span>
+						<span>目的地</span>
+						<span>出发日期</span>
+						<span>游玩天数</span>
+						<span>出行人数</span>
+						<span>人均预算</span>
+					</div>
+					<div class="main-middle-m">
+						<div class="main-middle-m-box1">
+							<div class="main-middle-m-box2 active"><span>公司</span></div>
+							<div class="main-middle-m-box2"><span>私人</span></div>
+							<!-- <input type="text" class="text2"> -->
+						</div>
+						<div>
+							<input type="text" class="text1" placeholder="上海" required="true">
+						</div>
+						<div>
+							<input type="text" class="text1" placeholder="北京" required="true">
+						</div>
+						<div class="main-middle-m-box3">
+							<input type="text" class="text3" placeholder="最早" required="true">
+							<p>~</p> 
+							<input type="text" class="text3-1" placeholder="最晚" required="true">
+						</div>
+						<div class="main-middle-m-box3">
+							<input type="text" class="text1" placeholder="请输入" required="true">
+							<p>天</p>
+							<input type="checkbox" class="main-middle-checkbox" required="true">
+							<span>可适当增减天数</span>
+						</div>
+						<div class="main-middle-m-box3">
+							<input type="text" class="text1" placeholder=">3" required="true">
+							<p>成人</p>
+							<input type="text" class="text1" placeholder="请输入儿童" required="true">
+							<p>儿童</p>
+						</div>
+						<div>
+							<!-- <input type="select" class="text1" placeholder="请选择人均预算">  -->
+							<select class="text1" style="color:#aaa;">
+								<option value="0" selected="select">请选择人均预算</option>
+								<option value="1">5千元以下</option>
+								<option value="2">5千元~1万元</option>
+								<option value="3">1万元以上</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="main-footer-h">
+					<img src="../images/Custom page/Custom page-04.jpg" alt="">
+					<p>特色服务</p>
+				</div>
+				<div class="main-footer-form">
+					<div class="main-footer-left">
+						<span>旅行国际</span>
+						<span>行程安排</span>
+						<span>住宿安排</span>
+						<span>我的要求</span>
+					</div>
+					<div class="main-footer-right">
+						<div class="main-footer-right-box1">
+							<div class="chenge-box active"><span>不限</span></div>
+							<div class="chenge-box"><span>境内</span></div>
+							<div class="chenge-box"><span>境外</span></div>
+						</div>
+						<div class="main-footer-right-box1">
+							<div class="chenge-box active"><span>不限</span></div>
+							<div class="chenge-box"><span>紧凑</span></div>
+							<div class="chenge-box"><span>适中</span></div>
+							<div class="chenge-box"><span>宽松</span></div>
+						</div>
+						<div class="main-footer-right-box1">
+							<div class="chenge-box active"><span>不限</span></div>
+							<div class="chenge-box"><span>三星/舒适</span></div>
+							<div class="chenge-box"><span>四星/高档</span></div>
+							<div class="chenge-box"><span>五星/豪华</span></div>
+							<div class="chenge-box"><span>特色住宿</span></div>
+						</div>
+						<textarea class="main-footer-textarea"></textarea>
+						<input type="submit" class="main-footer-btn" value="提交">
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+
+	<!-- 页面最底部 -->
+	<div id="footer">
+		<div class="footer-list">
+			<div class="footer-list-inner">
+			<ul>
+				<li class="footer-list-li1"><a href="http://www.ccpress.com.cn/">人民交通出版社</a></li>
+				<li class="footer-list-li2"><a href="exercise/tourism.html">爱自驾</a></li>
+				<li class="footer-list-li3"><a href="#">联系我们</a></li>
+				<li class="footer-list-li4"><a href="https://www.baidu.com/">友情链接</a></li>
+				<li class="footer-list-li5"><a href="https://www.taobao.com/">爱自驾品牌店</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="clear"></div>
+		<div class="copyright">
+			<span>人民交通出版社股份有限公司</span>
+			<span>京ICP备15018898号－1</span>
+			<span>开发团队:切图仔</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="../script/jquery-1.11.1.js"></script> 
+	<script src="../script/jquery-1.12.0.min.js"></script>
+	<script src="../script/gps_changes.js"></script>
+	<!-- <script type="text/javascript" src="script/modal.js"></script> -->
+	<script type="text/javascript" src="../script/bootstrap.js"></script>
+	<script>
+		// 模态框
+		$('#myModal').on('shown.bs.modal',function(){
+				// $('#myInput').focus()
+		});
+    	$('#signIn').on('shown.bs.modal',function(){
+        // $('#myInput').focus()
+    	});
+	</script>
+	<!-- 蓝色按钮切换功能 -->
+	<script>
+		$(".chenge-box").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+		$(".main-middle-m-box2").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	</script>
+	<!-- 表单验证 -->
+	<script>
+		$(".telephone6-11").blur(function(){
+			var re = /^[0-9]{11}$/;
+			var str = $(".telephone6-11").val();
+			var result = re.test(str);
+			// console.log(result)
+			if(result){
+				$(".telephone11").text("成功").addClass("green").removeClass("red");
+			}else{
+				$(".telephone11").text("请输入11位电话号码").addClass("red").removeClass("green");
+			}
+  		
+		})
+		$(".telephone-e").blur(function(){
+			var re = /^[0-9a-zA-Z\_]{5,12}\@qq\.com$/;//{}为前面一位的定义[]内是或门
+			var str = $("input").val();
+			var result = re.test(str);
+			// console.log(result)
+			if(result){
+				$(".telephone-email").text("成功").addClass("green").removeClass("red");
+			}else{
+				$(".telephone-email").text("请输正确邮箱格式").addClass("red").removeClass("green");
+			}
+  		
+		})
+		
+	</script>
+</body>
+</html>
