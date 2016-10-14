@@ -1,0 +1,356 @@
+		*{
+			margin:0px;
+			padding:0px;
+
+		}
+
+		html,body, .swiper-container, .swiper-wrapper{
+			height: 100%;
+			width: 100%;
+		}
+	
+		.swiper-slide{
+			height: 100%;
+			width: 100%;
+			background-color:#F0F8FF;
+		}
+		.top{
+
+			height: 60px;
+			background-color: #50bbdb;
+			overflow: hidden;
+			
+
+		}
+		.swiper-slide .top ul{
+			margin-top: 10px;
+			margin-left: 100px;
+
+		}
+		.top ul li{
+			margin-left: 20px;
+			list-style: none;
+			float: left;
+			height: 30px;
+			width:80px;
+			border-radius: 10px;
+			border:1px solid pink;
+			text-align: center;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		.top ul li a{
+			text-decoration: none;
+		}
+		.top ul li:hover{
+			background-color: yellow;
+		}
+		.swiper-slide .cent{
+			margin-top: 100px;
+			height: 400px;
+			width: 600px;
+			margin:0 auto;
+			border-bottom: 0.03rem solid #50bbdb;
+		}
+		.swiper-slide .cent img{
+			height: 300px;
+			width: 300px;
+			border-radius: 300px;
+			margin-left: 150px;
+			margin-top: 20px;
+		}
+		.swiper-slide .cent h1{
+			margin-left: 50px;
+			color: #9400D3;
+		}
+		.swiper-slide .bottom{
+			width: 150px;
+			margin:0 auto;
+		}
+		.swiper-slide .bottom h4{
+			margin-top: 20px;
+			text-align: center;
+			color: #0000CD;
+		}
+		#box2 .cent2{
+			width: 150px;
+			margin:0 auto;
+			margin-top: 30px;
+			border-bottom: 3px solid red;
+		}
+		#box2 .cent2 h1{
+			text-align: center;
+		}
+		/*dengyix */
+		#box2 .bottom2{
+			height: 200px;
+			width: 600px;
+			margin:0 auto;
+			background-color:#9400D3;
+			margin-top: 50px;
+			border-radius: 30px; 
+		}
+		#box2 .bottom2 .div1{
+			float: left;
+			margin-left: 60px;
+		}
+		#box2 .bottom2 .div1 img{
+			height: 120px;
+			width: 120px;
+		}
+		#box2 .bottom2 .div1 h4{
+			margin-left: 20px;
+		}
+		#box2 .bottom2 .div2{
+			float: left;
+			margin-left: 60px;
+		}
+		#box2 .bottom2 .div2 img{
+			height: 120px;
+			width: 120px;
+		}
+		#box2 .bottom2 .div2 h4{
+			margin-left: 20px;
+		}
+		#box2 .bottom2 .div3{
+			float: left;
+			margin-left: 60px;
+		}
+		#box2 .bottom2 .div3 img{
+			height: 120px;
+			width: 120px;
+		}
+		#box2 .bottom2 .div3 h4{
+			margin-left: 20px;
+		}
+		#box2 .down{
+			width: 700px;
+			height: 200px;
+			margin:auto;
+			position: relative;
+		}
+		#box2 .down p{
+			color:blue;
+			overflow: hidden;
+			font-size: 100px;
+		}
+		#box2 .down .wor{
+			font-size:20px;
+			display: block;
+			width: 500px;
+			height: 500px;
+			margin:0 auto;
+			margin-top: 50px;
+		}
+		#box2 .down p .s1{
+			position: absolute;
+			left:0px;
+			top: 0px;
+		}
+		#box2 .down p .s2{
+			position: absolute;
+			right:0px;
+			bottom: 0px;
+		}
+		#box3 .cent3{
+			width: 150px;
+			margin:0 auto;
+			margin-top: 30px;
+			border-bottom: 3px solid red;
+		}
+		#box3 h4{
+			margin-top: 50px;
+			text-align: center;
+			color: #9400D3;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		#box3 .cent3 h1{
+			text-align: center;
+		}
+		#box3 .big{
+			height: 400px;
+			width: 1000px;
+			margin:0 auto;
+		}
+		#box3 .bx1{
+			height: 200px;
+			width: 200px;
+			border-radius: 200px;
+			border:5px solid red;
+			float: left;
+			margin-left: 50px;
+			margin-right: 20px;
+			margin-top: 50px;
+		}
+		#box3 .bx1 h2{
+			line-height: 200px;
+			text-align: center;
+			color: green;
+			cursor: pointer;
+		} 
+		#box3 .bx1 ul{
+			height: 150px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid blue;
+			list-style: none;
+			display: none;
+		}
+		#box3 .bx1 ul li{
+			margin-top: 10px;
+			margin-left: 30px;
+		}
+		#box3 .bx2{
+			height: 200px;
+			width: 200px;
+			border-radius: 200px;
+			border:5px solid green;
+			float: left;
+			margin-right: 20px;
+			margin-top: 50px;
+		}
+		#box3 .bx2 h2{
+			line-height: 200px;
+			text-align: center;
+			color: yellow;
+			cursor: pointer;
+		} 
+		#box3 .bx2 ul{
+			height: 150px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid blue;
+			list-style: none;
+			display: none;
+		}
+		#box3 .bx2 ul li{
+			margin-top: 10px;
+			margin-left: 30px;
+		}
+		#box3 .bx3{
+			height: 200px;
+			width: 200px;
+			border-radius: 200px;
+			border:5px solid blue;
+			float: left;
+			margin-right: 20px;
+			margin-top: 50px;
+		}
+		#box3 .bx3 h2{
+			line-height: 200px;
+			text-align: center;
+			color: red;
+			cursor: pointer;
+		} 
+		#box3 .bx3 ul{
+			height: 150px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid blue;
+			list-style: none;
+			display: none;
+		}
+		#box3 .bx3 ul li{
+			margin-top: 10px;
+			margin-left: 30px;
+		}
+		#box3 .bx4{
+			height: 200px;
+			width: 200px;
+			border-radius: 200px;
+			border:5px solid yellow;
+			float: left;
+			margin-right: 20px;
+			margin-top: 50px;
+		}
+		#box3 .bx4 h2{
+			line-height: 200px;
+			text-align: center;
+			color: pink;
+			cursor: pointer;
+		} 
+		#box3 .bx4 ul{
+			height: 150px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid blue;
+			list-style: none;
+			display: none;
+		}
+		#box3 .bx4 ul li{
+			margin-top: 10px;
+			margin-left: 30px;
+		}
+
+		#box4 .cent4{
+			width: 150px;
+			margin:0 auto;
+			margin-top: 30px;
+			border-bottom: 3px solid red;
+		}
+		#box4 .cent4 h1{
+			text-align: center;
+		}
+		#box4 .swiper-container1 img{
+			height: 400px;
+			width: 800px;
+			border-radius: 30px;
+			display: block;
+			margin:0 auto;
+			margin-top: 30px;
+		}
+
+		
+		#box5 .cent5{
+			width: 150px;
+			margin:0 auto;
+			margin-top: 30px;
+			border-bottom: 3px solid red;
+		}
+		#box5 .cent5 h1{
+			text-align: center;
+		}
+		#box5 .bottom5{
+			height: 400px;
+			width: 300px;
+			margin :0 auto;
+
+		}
+		#box5 .p{
+			height: 300px;
+			width: 300px;
+			margin :0 auto;
+			margin-top: 50px;
+
+		}
+		#box5 .p p{
+			color: green;
+		}
+		#box5 .p .p1{
+			margin-left: 20px;
+		}
+		#box5 .p .p2{
+			margin-left: 23px;
+		}
+		#box5 .p .p3{
+			margin-left: 45px;
+		}
+		#box5 .p .p4{
+			margin-left: 30px;
+		}
+		#box5 .bottom5 h3{
+			color:blue;
+			margin-top: 50px;
+			text-align: center;
+		}
+		#box5 h3{
+			text-align: center;
+		}
+
+		.clearFix:before,
+		.clearFix:after {
+		  content: "";
+		  display: block;
+		  clear: both;
+		}
