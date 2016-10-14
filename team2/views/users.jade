@@ -1,0 +1,30 @@
+extends layout
+
+block content
+        h1 用户列表
+        table.table.table-hover(class='table table-bordered')
+            form(id="myform")
+                label(for='') 邮箱
+                input(type='email' name="email")
+
+                label(for='') 姓名
+                input(type='text' name="username")
+
+                label(for='') 密码
+                input(type='password' name="password")
+                span(class="ts")
+                button 添加用户
+
+            thead
+                th id
+                th 邮箱
+                th 姓名
+                th 密码
+                th 删除
+
+            tbody
+        script(src='script/jquery.js')
+        script(src="script/users.js")
+
+
+

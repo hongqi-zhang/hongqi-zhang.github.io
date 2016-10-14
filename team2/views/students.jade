@@ -1,0 +1,65 @@
+extends layout
+
+block content
+
+    h1 学生列表
+
+    table.table.table-hover(class='table table-bordered')
+
+        form(id="myform")
+
+            label( class="lab" for='') 编号
+            input(type='text' name="number")
+
+            label(for='') 姓名
+            input(type='text' name="name")
+
+            label(for='') 年龄
+            input(type='text' name="age")
+
+            label(for='') 成绩
+            input(type='text' name="achievement")
+
+            label(for='') 性别
+            input(type='text' name="sex")
+            span(class="sts")
+            button 添加
+        br
+        form(id="myupform")
+            label(for='') 编号
+            input.number(type='text' name="number")
+            label(for='') 姓名
+            input.name(type='text' name="name")
+            label(for='') 年龄
+            input.age(type='text' name="age")
+            label(for='') 成绩
+            input(type='text' name="achievement")
+            label(for='') 性别
+            input(type='text' name="sex")
+            span(class="sts")
+            button 确定修改
+
+        thead
+            th id
+            th 编号
+            th 姓名
+            th 年龄
+            th 成绩
+            th 性别
+            th 删除
+            th 修改
+        tbody
+            script(src="script/jquery.js")
+            script(src="script/index.js")
+            link(rel='stylesheet', href='style/forms.css')
+
+
+
+
+
+
+
+
+
+
+

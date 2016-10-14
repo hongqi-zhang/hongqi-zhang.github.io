@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Document
+        link(rel='stylesheet', href='style/form.css')
+        link(rel='stylesheet', href='style/bootstrap.min.css')
+    body
+
+        h1(class="stu") 学生成绩管理系统
+        form(action='/form' method="post")
+            .form-group
+                label(for='') 邮  箱
+                input(type='email' name="email")
+            .form-group
+                label(for='') 用户名
+                input(type='text' name="username")
+            .form-group
+                label(for='') 密  码
+                input(type='password' name="password")
+            div
+                span #{showinfo}
+            div
+                button 用户登录

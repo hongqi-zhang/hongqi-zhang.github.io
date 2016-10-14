@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Document
+        link(rel='stylesheet', href='style/bootstrap.min.css')
+        link(rel='stylesheet', href='style/form.css')
+        link(rel='stylesheet', href='style/forms.css')
+
+
+
+
+    body
+        table.table.table-hover(class='table-bordered,table')
+            thead
+                th
+                    p #{userinfo}
+                th
+                    a(href="/users")
+                        button 用户列表
+                th
+                    a(href="/students")
+                        button 学生列表
+
+                th
+                    | 性别
+                    button(id="male") 男
+                    button(id="female") 女
+                th
+                    button(id="achievement") 成绩排序
+
+        block content
