@@ -1,6 +1,11 @@
 *{
 	margin:0px;
 	padding:0px;
+
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 #header{
 	height: 300px;
@@ -48,7 +53,7 @@
 	text-align: center;
 }
 #header .nav li:hover{
-	background-color:pink;
+	background-color:#A9A9A9;
 }
 #header .nav li a{
 	text-decoration: none;
@@ -56,27 +61,72 @@
 }
 #content .jgjs{
 	width: 33%;
+	height: 300px;
 	float:left;
+	border:1px solid #A9A9A9;
 }
 #content .jgjs ul{
 	margin-left: 10px;
+
 	
 }	
 #content .jgjs ul li{
 	margin-top: 10px;
+	list-style: none;
 }
 #content .hfdj{
 	width: 33%;
+	height: 300px;
 	float:left;
+	border:1px solid #A9A9A9;
+}
+#content .hfdj ul li{
+	margin-top: 10px;
+	list-style: none;
 }
 #content .gggs{
 	width: 33%;
+	height: 300px;
+	border:1px solid #A9A9A9;
 	float:left;
+}
+#content .gggs ul li{
+	margin-top: 10px;
+	list-style: none;
 }
 #content h2{
 	width: 100px;
-	background-color: #C0C0C0;
+	height: 40px;
+	border-bottom: 1px solid #C0C0C0;
 	text-align: center;
 	margin-top: 10px;
 	margin-left: 20px;
 }
+#content .slxf h2{
+	margin-top: 10px;
+	border-bottom: 1px solid #C0C0C0;
+}
+ .swiper-container .swiper-wrapper .swiper-slide{
+	float: left;
+	width: 20%;
+	height: 200px;
+	
+
+}
+ .swiper-container .swiper-wrapper .pic1{
+	background-image: url(../images/3.jpg);
+}
+ .swiper-container .swiper-wrapper .pic2{
+	background-image: url(../images/4.jpg);
+}
+ .swiper-container .swiper-wrapper .pic3{
+	background-image: url(../images/5.jpg);
+}
+ .swiper-container .swiper-wrapper .pic4{
+	background-image: url(../images/6.jpg);
+}
+ .swiper-container .swiper-wrapper .pic5{
+	background-image: url(../images/7.jpg);
+}
+
+

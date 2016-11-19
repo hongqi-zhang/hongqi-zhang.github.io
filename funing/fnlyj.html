@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style/fnlyj.css">
+	<link rel="stylesheet" href="style/animate.min.css">
+	<link rel="stylesheet" href="style/swiper-3.3.1.min.css">
 </head>
 <body>
 	<div id="header">
@@ -40,10 +42,57 @@
 		</div>
 		<div class="hfdj">
 			<h2>行风党建</h2>
+			<ul>
+				<li><a href="">•中国共产党第十八届中央委员会第六次全体会议公报</a></li>
+				<li><a href="">•《中国共产党问责条例》逐条解读</a></li>
+				<li><a href="">•抚宁区林业局组织开展专题党课体验活动</a></li>
+				<li><a href="">•抚宁区林业局召开“两学一做”学习教育活动动员大会</a></li>
+				<li><a href="">•抚宁区林业局集中开展纪检专项检查活动</a></li>
+				<li><a href="">•抚宁区林业局召开机关作风整顿动员会</a></li>
+				
+			</ul>
 		</div>
 		<div class="gggs">
 			<h2>公告公示</h2>
+			<ul>
+				<li><a href=""> •秦皇岛市林业局2015年行政处罚信息公示 [2016-01-19]</a></li>
+				<li><a href="">•秦皇岛市林业局关于开展2015年度执法质量考评的通知 [2015-12-09]</a></li>
+				<li><a href="">•秦皇岛市绿化委员会办公室关于推荐全国绿化先进集体候选单位的公示 [2015-09-10]</a></li>
+				<li><a href="">•秦皇岛市林业局2015年政府信息公开年度报告 [2016-02-04]</a></li>
+				<li><a href="">•我市启动高标准经济林园区建设项目 [2016-01-07]</a></li>
+				<li><a href="">•关于推荐全国生态建设突出贡献奖先进集体和先进个人的公示 [2016-05-03]</a></li>
+			</ul>
 		</div>
+		<div class="clear"></div>
+		<div class="slxf">
+			<h2>森林消防</h2>
+
+			<div class="swiper-container">
+
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide pic1"> </div>
+			    <div class="swiper-slide pic2"></div>
+			    <div class="swiper-slide pic3"></div>
+			    <div class="swiper-slide pic4"></div>
+			    <div class="swiper-slide pic5"></div>
+			    
+			  </div>
+			</div>			
+		</div>
+
 	</div>
+	<script src="script/swiper-3.3.1.min.js"></script>
+	<script src="script/swiper.animate1.0.2.min.js"></script>
+	<script src="script/jquery.js"></script>
+	<script> 
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: 2000,//可选选项，自动滑动
+			slidesPerView : 5,
+			centeredSlides : false,
+			
+			loop : true,
+		})
+	
+	</script>
 </body>
 </html>
