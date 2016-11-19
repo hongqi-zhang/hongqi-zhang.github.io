@@ -1,0 +1,82 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#header{
+	height: 300px;
+	width: 100%;
+	
+	background-image: url(../images/1.jpg);
+}
+#header .logo img{
+	height: 100px;
+	width: 120px;
+	float: left;
+	margin-left: 50px;
+	margin-top:50px;
+
+}
+#header .logo .logo-z{
+	float: left;
+	list-style: none;
+	margin-left: 20px;
+	margin-top:50px;
+}
+#header .logo .logo-z .li1{
+	font-size: 70px;
+	color:red;
+}
+#header .logo .logo-z .li2{
+	font-size: 25px;
+	color:yellow;
+}
+.clear{
+	clear:both;
+}
+#header .nav{
+	list-style: none;
+	margin-top: 100px;
+	height: 40px;
+	width: 100%;
+	background-color: green;
+}
+#header .nav li{
+	float:left;
+	width: 13%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+#header .nav li:hover{
+	background-color:pink;
+}
+#header .nav li a{
+	text-decoration: none;
+	color:white;
+}
+#content .jgjs{
+	width: 33%;
+	float:left;
+}
+#content .jgjs ul{
+	margin-left: 10px;
+	
+}	
+#content .jgjs ul li{
+	margin-top: 10px;
+}
+#content .hfdj{
+	width: 33%;
+	float:left;
+}
+#content .gggs{
+	width: 33%;
+	float:left;
+}
+#content h2{
+	width: 100px;
+	background-color: #C0C0C0;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 20px;
+}
