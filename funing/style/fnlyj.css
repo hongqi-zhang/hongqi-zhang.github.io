@@ -111,6 +111,15 @@ a{
 	margin-top: 10px;
 	border-bottom: 1px solid #C0C0C0;
 }
+#content .slxf .dadui{
+	height: 120px;
+	width: 100%;
+	border:1px solid #C0C0C0;
+}
+#content .slxf .dadui h3{
+	margin-top: 10px;
+	margin-left: 10px;
+}
  .swiper-container .swiper-wrapper .swiper-slide{
 	float: left;
 	width: 20%;
@@ -118,6 +127,58 @@ a{
 	
 
 }
+#footer{
+	background-color:#C0C0C0;
+
+}
+#footer h3{
+	margin-top: 10px;
+	margin-left: 10px;	
+}
+#footer div{
+	float: left;
+	width: 20%;
+
+}
+#footer .box3{
+	
+	height: 66px;
+	
+}
+#footer .logo-z{
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+}
+#footer .logo-z .li1{
+	color:red;
+	font-size: 28px;
+	margin-top: 8px;
+}
+#footer .logo-z .li2{
+	color:#C0C0C0;
+	font-size: 15px;
+
+
+}
+#footer .box5 .logo-z .li2{
+	color:black;
+	font-size: 15px;
+	margin-left: 20px;
+
+
+}
+#footer .im{
+	float:left;
+	height: 60px;
+	width: 50px;
+}
+#footer .box4 img{
+	height: 66px;
+	
+
+}
+
 
 
 
