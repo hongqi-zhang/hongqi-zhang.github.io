@@ -140,9 +140,10 @@ a{
 	float: left;
 	width: 20%;
 
+
 }
 #footer .box3{
-	
+
 	height: 66px;
 	
 }
@@ -153,22 +154,21 @@ a{
 }
 #footer .logo-z .li1{
 	color:red;
-	font-size: 28px;
+	font-size: 20px;
 	margin-top: 8px;
 }
 #footer .logo-z .li2{
-	color:#C0C0C0;
-	font-size: 15px;
+	color:black;
+	font-size: 12px;
 
 
 }
 #footer .box5 .logo-z .li2{
 	color:black;
-	font-size: 15px;
+	font-size: 12px;
 	margin-left: 20px;
-
-
 }
+
 #footer .im{
 	float:left;
 	height: 60px;
