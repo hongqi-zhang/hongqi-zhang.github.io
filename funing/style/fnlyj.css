@@ -11,7 +11,7 @@ a{
 	height: 300px;
 	width: 100%;
 	
-	background-image: url(../images/1.jpg);
+	background-image: url(../images/1.gif);
 }
 #header .logo img{
 	height: 100px;
@@ -128,6 +128,7 @@ a{
 
 }
 #footer{
+	overflow: hidden;
 	background-color:#C0C0C0;
 
 }
